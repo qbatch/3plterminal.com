@@ -142,9 +142,7 @@ const tabsData = [
     data={dataTab5}
     checkboxImage={Checkbox}
     graphImage={Tab5}
-  /> },
-  { id: 6, label: 'Roll Management', content: 'This is the content of Tab 6' },
-  { id: 7, label: 'User Management', content: 'This is the content of Tab 7' },
+  /> }
 ];
 
 const FeaturesTab = () => {

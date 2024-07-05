@@ -18,7 +18,7 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <a href='/'><img src={Logo} alt="Logo" /></a>
+          <a href='/'><img className='logo' src={Logo} alt="Logo" /></a>
           <div className='navbar-links'>
             <Dropdown />
             <a href="">Demo</a>

@@ -57,6 +57,9 @@ margin-bottom: 99px;
     ${media.lg`
     padding: 32px;
       `}
+    ${media.xs`
+    padding: 24px;
+      `}
   }
   &:nth-child(2){
     display: flex;

@@ -25,6 +25,9 @@ const RecordsWrapper = styled.div`
       ${media.sm`
       min-width: 264px;
       `}
+      ${media.xs`
+      min-width: 181px;
+      `}
       h2{
         font-family: "Caveat", cursive;
         font-size: 90px;

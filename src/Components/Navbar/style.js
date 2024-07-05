@@ -10,7 +10,14 @@ const NavbarStyleWrapper = styled.div`
     z-index: 4;
     box-shadow: 0px 4px 24px 0px #0000000D;
     padding: 13px 0;
-    .navbar{padding:0}
+    .navbar{
+      padding:0;
+      img.logo{
+          ${media.xs`
+          width: 154px;
+            `}
+      }
+    }
 .navbar-links {
     display: flex;
     grid-gap: 40px;

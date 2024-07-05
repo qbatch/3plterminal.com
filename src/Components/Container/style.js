@@ -7,5 +7,8 @@ margin: auto 72px;
 ${media.lg`
 margin: auto 32px;
 `}
+${media.xs`
+margin: auto 24px;
+`}
 `;
 export {ContainerStyleWrapper};
