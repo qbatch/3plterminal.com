@@ -8,7 +8,7 @@ const FbaPrepSoftware = () => {
   return (
     <FbaPrepSoftwareWrapper>
       <img className='arrow-image' src={DownArrow} alt='DownArrow' title='DownArrow' />
-     <h1>FBA Prep and Pack Software n</h1>
+     <h1>FBA Prep and Pack Software</h1>
      <h2>Neat, Fast, and Accurate Prepping Experiences</h2>
      <p>After years of struggling with prep and pack seller inefficiencies, gazillion PDF files, label resizing tools,
        and bundles of labels, we decided to develop the simplest and most efficient FBA Prep software available!</p>
