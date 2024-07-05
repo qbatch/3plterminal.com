@@ -7,7 +7,7 @@ import { FbaPrepSoftwareWrapper } from './style'
 const FbaPrepSoftware = () => {
   return (
     <FbaPrepSoftwareWrapper>
-      <img className='arrow-image' src={DownArrow} about='lt="DownArrow' />
+      <img className='arrow-image' src={DownArrow} alt='DownArrow' title='DownArrow' />
      <h1>FBA Prep and Pack Software</h1>
      <h2>Neat, Fast, and Accurate Prepping Experiences</h2>
      <p>After years of struggling with prep and pack seller inefficiencies, gazillion PDF files, label resizing tools,
@@ -16,7 +16,7 @@ const FbaPrepSoftware = () => {
         <Button variant="outline">Sign Up</Button>
         <Button image={true}>Book Free Demo</Button>
        </div>
-       <img className='banner-image' src={MainBannerImage} alt="banner-image"/>
+       <img className='banner-image' title='banner-image' src={MainBannerImage} alt="banner-image"/>
     </FbaPrepSoftwareWrapper>
   )
 }

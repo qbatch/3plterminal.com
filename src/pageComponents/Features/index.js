@@ -154,7 +154,7 @@ const FeaturesTab = () => {
         <p className='label-text'>Features</p>
         <div className='title'>
           <h2>Tired of under reported items and frustrated customers? Give them reasons why <span>you're different and trustworthy.</span></h2>
-          <img src={ArrowDown} alt="arrow" />
+          <img src={ArrowDown} title='banner-image' alt="arrow" />
         </div>
         <div className='tabs-wrapper'>
           {tabsData.map(tab => (

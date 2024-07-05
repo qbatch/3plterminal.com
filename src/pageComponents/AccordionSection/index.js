@@ -88,8 +88,8 @@ const AccordionSection = () => {
     <AccordionSectionWrapper>
       <Container>
        <div className='header'>
-          <h2>Frequently Asked Questions<img src={HeadingIcon} alt="HeadingIcon" /></h2>
-          <img className='roll-image' src={ArrowIcon} alt="ArrowIcon"/>
+          <h2>Frequently Asked Questions<img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
+          <img className='roll-image' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon"/>
         </div>
         <Accordion items={accordionItems} bodyExtra={true} defaultActiveKey="0" />
         </Container>

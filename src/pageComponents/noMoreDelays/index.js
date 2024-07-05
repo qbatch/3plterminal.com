@@ -6,8 +6,8 @@ import { NoMoreDelaysWrapper } from './style'
 const NoMoreDelays = () => {
   return (
     <NoMoreDelaysWrapper>
-      <img className='web-image' src={DelayWeb} alt={DelayWeb} />
-      <img className='mobile-image' src={DelayMobile} alt={DelayMobile} />
+      <img className='web-image' title='DelayWeb' src={DelayWeb} alt={DelayWeb} />
+      <img className='mobile-image' title='DelayMobile' src={DelayMobile} alt={DelayMobile} />
     </NoMoreDelaysWrapper>
   )
 }

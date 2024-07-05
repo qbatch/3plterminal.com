@@ -51,12 +51,12 @@ const TurnChallenges = () => {
           {data.map((item, index) => (
             <div className='items' key={index}>
               <div className={`header ${index === 0 ? 'header' : index === 1 ? 'header-2' : index === 2 ? 'header-3' : ''}`}>
-                <img src={item.header.imgSrc} alt={item.header.title} />
+                <img src={item.header.imgSrc} title={item.header.title} alt={item.header.title} />
                 <h3>{item.header.title}</h3>
               </div>
               <div className={`content ${index === 2 ? 'content-2' : ''}`}>
-                {item.content.map((text, idx) => (
-                  <p className='label' key={idx}>{text}</p>
+                {item.content.map((text, index) => (
+                  <p className='label' key={index}>{text}</p>
                 ))}
               </div>
             </div>

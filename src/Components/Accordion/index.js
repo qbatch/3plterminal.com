@@ -27,6 +27,7 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
                 <img
                   src={activeKey === index.toString() ? minusIcon : plusIcon}
                   alt={activeKey === index.toString() ? 'Collapse' : 'Expand'}
+                  title={activeKey === index.toString() ? 'Collapse' : 'Expand'}
                   className="ms-2"
                   style={{ width: '1em', height: '1em' }}
                 />

@@ -18,7 +18,7 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <a href='/'><img className='logo' src={Logo} alt="Logo" /></a>
+          <a href='/'><img className='logo' src={Logo} alt="Logo" title='Logo' /></a>
           <div className='navbar-links'>
             <Dropdown />
             <a href="">Demo</a>
@@ -29,11 +29,11 @@ const Header = () => {
             <a href=''>Sign In</a>
             <Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button>
           </div>
-          <img onClick={handleShow} className='burger-icon' src={BurgerIcon} alt='BurgerIcon' />
+          <img onClick={handleShow} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
         </div>
         <Offcanvas placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title><a href='/'><img src={Logo} alt="Logo" /></a></Offcanvas.Title>
+            <Offcanvas.Title><a href='/'><img src={Logo} alt="Logo" title='Logo' /></a></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>

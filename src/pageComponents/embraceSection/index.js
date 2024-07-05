@@ -6,8 +6,8 @@ import { EmbraceSectionWrapper } from './style'
 const EmbraceSection = () => {
   return (
     <EmbraceSectionWrapper>
-      <img className='web-image' src={Bif} alt="Bif"/>
-      <img className='mobile-image' src={BifMobile} alt="BifMobile"/>
+      <img className='web-image' src={Bif} title='Bif' alt="Bif"/>
+      <img className='mobile-image' src={BifMobile} title='BifMobile' alt="BifMobile"/>
     </EmbraceSectionWrapper>
 
   )

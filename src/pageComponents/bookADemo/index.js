@@ -69,7 +69,7 @@ const Demo = () => {
       <div className='demo-wrapper'>
         <div className='demo-items'>
           <div className='heading'>
-            <h2>Book Free Demo <img className='heading-icon' src={HeadingIcon} alt="HeadingIcon" /></h2>
+            <h2>Book Free Demo <img className='heading-icon' src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
             <p>We created software to simplify FBA inbound prep, making it simple,</p>
             <p>easy, and accurate <span>— for you.</span></p>
           </div>
@@ -111,7 +111,7 @@ const Demo = () => {
           </Form>
         </div>
         <div className='demo-items'>
-          <img src={DemoImage} alt="DemoImage" />
+          <img src={DemoImage} title="DemoImage" alt="DemoImage" />
         </div>
       </div>
     </DemoWrapper>

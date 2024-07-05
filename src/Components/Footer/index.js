@@ -37,7 +37,7 @@ const Footer = () => {
     <FooterWrapper>
       <Container>
         <div className='footer'>
-          <img src={Logo} alt='Logo' />
+          <img src={Logo} alt='Logo' title='Logo' />
           <div className='links-wrapper'>
             <Link>Features</Link>
             <Link>Demo</Link>
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className='social-icons'>
             <p>Follow Us at</p>
             {Data.map((item, index) => (
-              <Link href={item.href} key={index}><img src={item.img} alt={item.img} /></Link>
+              <Link href={item.href} key={index}><img src={item.img} alt={item.img} title={item.img} /></Link>
             ))}
           </div>
         </div>

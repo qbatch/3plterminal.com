@@ -3,10 +3,10 @@ import ChatIcon from '../../../Static/chat-network.svg'
 import { ButtonStyleWrapper } from './style';
 
 const Button = (props) => {
-  const { icon, image, children, variant, alt, onClick,...rest } = props;
+  const { icon, image, children, variant, alt, title, onClick,...rest } = props;
   return (
     <ButtonStyleWrapper {...rest} onClick={onClick} variant={variant}>
-        {image ? <img src={ChatIcon || image} alt={alt}/> : null}
+        {image ? <img src={ChatIcon || image} alt="ChatIcon" title={title}/> : null}
         {children}
     </ButtonStyleWrapper>
   );
