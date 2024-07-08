@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/3pl-terminal",
   siteMetadata: {
     title: `3PL_landing_page`,
     siteUrl: `https://www.yourdomain.tld`
