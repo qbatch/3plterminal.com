@@ -13,8 +13,8 @@ module.exports = {
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp","gatsby-plugin-styled-components",  {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "images",
-      "path": "./src/images/"
+      "name": "static",
+      "path": "static/"
     },
     __key: "images"
   },
