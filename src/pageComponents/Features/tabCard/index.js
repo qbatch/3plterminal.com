@@ -10,7 +10,7 @@ const FirstTab = ({ title, data, checkboxImage, graphImage }) => {
         <div className='box-items-wrapper'>
           {data.map((item, index) => (
             <div key={index} className='bar-item'>
-              <img src={checkboxImage} title='Checkbox' alt="Checkbox" />
+              <img src={checkboxImage} loading='lazy' title='Checkbox' alt="Checkbox" />
               <div className='content-item'>
                 <h3>{item.heading}</h3>
                 <p>{item.text}</p>

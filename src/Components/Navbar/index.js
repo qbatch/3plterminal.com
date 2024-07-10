@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, lazy } from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Container from '../Container';
-import Button from '../Button';
-import Dropdown from '../Dropdown';
 import Logo from '../../../Static/3pl-logo.svg'
 import ChatIcon from '../../../Static/chat-network.svg'
 import BurgerIcon from '../../../Static/burger-icon.svg'
 import { NavbarStyleWrapper } from './style';
+
+const Dropdown = lazy(() => import('../Dropdown'));
+const Container = lazy(() => import('../Container'));
+const Button  = lazy(() => import( '../Button'));
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <a href='/'><img className='logo' src={Logo} alt="Logo" title='Logo' /></a>
+          <a href='/'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></a>
           <div className='navbar-links'>
             <Dropdown />
             <a href="">Demo</a>
@@ -33,7 +34,7 @@ const Header = () => {
         </div>
         <Offcanvas placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title><a href='/'><img src={Logo} alt="Logo" title='Logo' /></a></Offcanvas.Title>
+            <Offcanvas.Title><a href='/'><img src={Logo} loading='lazy' alt="Logo" title='Logo' /></a></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>

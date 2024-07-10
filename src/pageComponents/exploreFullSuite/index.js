@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { lazy } from 'react'
+
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll.svg';
 import Card1 from '../../../Static/card-1.svg';
@@ -9,11 +10,13 @@ import Card5 from '../../../Static/card-5.svg';
 import Card6 from '../../../Static/card-6.svg';
 import Card7 from '../../../Static/card-7.svg';
 import Card8 from '../../../Static/card-8.svg';
-import Container from '../../Components/Container';
-import Button from '../../Components/Button'
+
 import { ExploreContentWrapper } from './style';
-import Card from '../../Components/Card';
-import ResponsiveSlider from '../../Components/Slider';
+
+const Card = lazy(() => import('../../Components/Card'));
+const ResponsiveSlider = lazy(() => import('../../Components/Slider'));
+const Container = lazy(() => import('../../Components/Container'));
+const Button = lazy(() => import('../../Components/Button'));
 
 const ExploreContent = () => {
   const Data = [

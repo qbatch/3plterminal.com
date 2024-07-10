@@ -1,10 +1,10 @@
-import React from 'react'
-import HeadingIcon from '../../../Static/heading-top-icon.svg';
-import ArrowIcon from '../../../Static/spring-roll-left.svg';
+import React, { lazy } from 'react'
 import { AccordionSectionWrapper } from './style'
-import Container from '../../Components/Container';
-import Accordion from '../../Components/Accordion';
-import Button from '../../Components/Button';
+
+const HeadingIcon = lazy(() => import( '../../../Static/heading-top-icon.svg'));
+const ArrowIcon = lazy(() => import( '../../../Static/spring-roll-left.svg'));
+const Container  = lazy(() => import('../../Components/Container'));
+const Accordion = lazy(() => import( '../../Components/Accordion'));
 
 const AccordionSection = () => {
   const accordionItems = [
@@ -89,7 +89,7 @@ const AccordionSection = () => {
       <Container>
        <div className='header'>
           <h2>Frequently Asked Questions<img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
-          <img className='roll-image' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon"/>
+          <img className='roll-image' loading='lazy' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon"/>
         </div>
         <Accordion items={accordionItems} bodyExtra={true} defaultActiveKey="0" />
         </Container>

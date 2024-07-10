@@ -1,15 +1,16 @@
-import * as React from "react"
-import Layout from "../Components/Layout/layout"
-import FbaPrepSoftware from "../pageComponents/fbaPrepSoftware"
-import Records from "../pageComponents/records"
-import FeaturesTab from "../pageComponents/Features"
-import ExploreContent from "../pageComponents/exploreFullSuite"
-import EmbraceSection from "../pageComponents/embraceSection"
-import TurnChallenges from "../pageComponents/turnChallenges"
-import IntegrateWithECommerce from "../pageComponents/integrateWithECommerce"
-import NoMoreDelays from "../pageComponents/noMoreDelays"
-import AccordionSection from "../pageComponents/AccordionSection"
-import Demo from "../pageComponents/bookADemo"
+import React, { lazy } from "react"
+
+const FbaPrepSoftware = lazy(() => import("../pageComponents/fbaPrepSoftware"));
+const Records = lazy(() => import("../pageComponents/records"));
+const FeaturesTab = lazy(() => import("../pageComponents/Features"));
+const ExploreContent = lazy(() => import("../pageComponents/exploreFullSuite"));
+const EmbraceSection = lazy(() => import("../pageComponents/embraceSection"));
+const TurnChallenges = lazy(() => import("../pageComponents/turnChallenges"));
+const IntegrateWithECommerce = lazy(() => import("../pageComponents/integrateWithECommerce"));
+const NoMoreDelays = lazy(() => import("../pageComponents/noMoreDelays"));
+const AccordionSection = lazy(() => import("../pageComponents/AccordionSection"));
+const Demo = lazy(() => import("../pageComponents/bookADemo"));
+const Layout = lazy(() => import("../Components/Layout/layout"));
 
 const IndexPage = () => {
   return (

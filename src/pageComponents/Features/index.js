@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import Container from '../../Components/Container'
+import React, { useState, lazy } from 'react'
+
 import ArrowDown from '../../../Static/spring-roll-left.svg'
 import Checkbox from '../../../Static/checkbox.svg'
 import Graph from '../../../Static/chart-image.svg'
@@ -7,8 +7,11 @@ import Tab2 from '../../../Static/tab2.svg'
 import Tab3 from '../../../Static/tab3.svg'
 import Tab4 from '../../../Static/billing.svg'
 import Tab5 from '../../../Static/action-log.svg'
-import FirstTab from './tabCard';
+
 import { FeaturesTabWrapper } from './style'
+
+const FirstTab = lazy(() => import('./tabCard'));
+const Container = lazy(() => import( '../../Components/Container'));
 
 const dataTab1 = [
   {

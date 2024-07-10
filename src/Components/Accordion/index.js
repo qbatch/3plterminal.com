@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,lazy } from 'react';
 import { Accordion } from 'react-bootstrap';
 import plusIcon from '../../../Static/plus.svg';
 import minusIcon from '../../../Static/minus.svg';  // Make sure this file exists
@@ -29,6 +29,7 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
                   alt={activeKey === index.toString() ? 'Collapse' : 'Expand'}
                   title={activeKey === index.toString() ? 'Collapse' : 'Expand'}
                   className="ms-2"
+                  loading='lazy'
                   style={{ width: '1em', height: '1em' }}
                 />
               </div>

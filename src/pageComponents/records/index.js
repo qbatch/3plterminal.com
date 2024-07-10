@@ -1,6 +1,8 @@
-import React from 'react'
-import Container from '../../Components/Container'
+import React, { lazy } from 'react'
+
 import { RecordsWrapper } from './style'
+
+const Container = lazy(() => import('../../Components/Container'));
 
 const Records = () => {
   const RecordsData = [

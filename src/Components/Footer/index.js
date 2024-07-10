@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { Link } from 'gatsby'
-import Button from '../Button'
 import Logo from '../../../Static/3pl-white-logo.svg'
 import FB from '../../../Static/facebook.svg'
 import Instagram from '../../../Static/instagram.svg'
@@ -8,7 +7,8 @@ import Linkedin from '../../../Static/linkedin.svg'
 import Youtube from '../../../Static/youtube.svg'
 import Twitter from '../../../Static/twitter.svg'
 import { FooterWrapper } from './style'
-import Container from '../Container'
+const Container = lazy(() => import( '../Container'));
+const Button = lazy(() => import( '../Button'));
 
 const Footer = () => {
   const Data = [
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className='social-icons'>
             <p>Follow Us at</p>
             {Data.map((item, index) => (
-              <Link href={item.href} key={index}><img src={item.img} alt={item.img} title={item.img} /></Link>
+              <Link href={item.href} key={index}><img src={item.img} loading='lazy' alt={item.img} title={item.img} /></Link>
             ))}
           </div>
         </div>

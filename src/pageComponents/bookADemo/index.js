@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, lazy } from 'react'
 import Form from 'react-bootstrap/Form';
-import ChatIcon from '../../../Static/chat-network.svg'
-import Button from '../../Components/Button';
-import DemoImage from '../../../Static/demo-image.svg'
+
+import DemoImage from '../../../Static/demo-image.svg';
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
-import InputGroup from '../../Components/Input';
+import  ChatIcon from '../../../Static/chat-network.svg';
+
 import { DemoWrapper } from './style'
+
+const Button = lazy(() => import( '../../Components/Button'));
+const InputGroup = lazy(() => import( '../../Components/Input'));
 
 const Demo = () => {
   const [formValues, setFormValues] = useState({

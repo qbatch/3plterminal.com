@@ -1,10 +1,13 @@
-import React from 'react'
-import Container from '../../Components/Container'
+import React, { lazy } from 'react'
+
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import Factor from '../../../Static/Factors.svg';
 import WithSoftware from '../../../Static/with-Software.svg';
 import WithOutSoftware from '../../../Static/without-Software.svg';
+
 import { TurnChallengesWrapper } from './style'
+
+const Container = lazy(() => import('../../Components/Container'));
 
 
 const TurnChallenges = () => {
@@ -51,7 +54,7 @@ const TurnChallenges = () => {
           {data.map((item, index) => (
             <div className='items' key={index}>
               <div className={`header ${index === 0 ? 'header' : index === 1 ? 'header-2' : index === 2 ? 'header-3' : ''}`}>
-                <img src={item.header.imgSrc} title={item.header.title} alt={item.header.title} />
+                <img src={item.header.imgSrc} loading='lazy' title={item.header.title} alt={item.header.title} />
                 <h3>{item.header.title}</h3>
               </div>
               <div className={`content ${index === 2 ? 'content-2' : ''}`}>
