@@ -22,7 +22,7 @@ const Header = () => {
           <a href='/'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></a>
           <div className='navbar-links'>
             <Dropdown />
-            <a href="">Demo</a>
+            <a href="">Dekmo</a>
             <a href="">Pricing</a>
             <a href="">FAQ’s</a>
           </div>
