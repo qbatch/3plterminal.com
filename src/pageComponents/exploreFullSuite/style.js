@@ -3,6 +3,9 @@ import { media } from "../../theme/media-mixins";
 
 const ExploreContentWrapper = styled.div`
 padding-top: 100px;
+${media.sm`
+padding-top:76px;
+`}
 position: relative;
 img.arrow-image{
   position: absolute;
@@ -36,6 +39,7 @@ h2{
     grid-gap: 32px;
     margin-top:48px;
     ${media.sm`
+      margin-top:36px;
       grid-template-columns: 1fr 1fr;
       `}
     ${media.xs`
@@ -50,8 +54,8 @@ button{
   margin:auto;
   margin-top:48px;
   margin-bottom:100px;
-  ${media.xs`
-  margin-bottom:48px;
+  ${media.sm`
+  margin-bottom:76px;
     `}
 }
 `;

@@ -8,7 +8,8 @@ ${media.md`
       padding: 48px 0;
     `}
 ${media.sm`
-      flex-direction:column;
+      flex-direction:column-reverse;
+      padding: 16px 0px 0px;
     `}
 .box{
   padding: 32px;
@@ -42,6 +43,7 @@ ${media.sm`
       display: flex;
       flex-direction: column;
       grid-row-gap: 4px;
+      padding-top:16px;
       h3{
         margin:0;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};

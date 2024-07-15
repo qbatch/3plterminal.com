@@ -39,8 +39,8 @@ const IntegrateWithECommerce = () => {
     },
   ]
   return (
-      <Container>
     <IntegrateWithECommerceWrapper>
+      <Container>
         <div className='header'>
           <h2>Integrate with <span><img src={HeadingIcon} loading='lazy' alt="HeadingIcon" title='HeadingIcon' />E-commerce</span> Marketplaces</h2>
           <img className='roll-image' loading='lazy' src={ArrowIcon} alt="ArrowIcon"/>
@@ -58,8 +58,8 @@ const IntegrateWithECommerce = () => {
         ))}
         </div>
       </Marquee>
-    </IntegrateWithECommerceWrapper>
       </Container>
+    </IntegrateWithECommerceWrapper>
   )
 }
 

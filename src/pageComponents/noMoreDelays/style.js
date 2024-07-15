@@ -3,6 +3,9 @@ import { media } from "../../theme/media-mixins";
 
 const NoMoreDelaysWrapper = styled.div`
 margin-top:95px;
+${media.sm`
+  margin-top:76px;
+`}
 img{
   max-width: 100%;
 width: 100%;

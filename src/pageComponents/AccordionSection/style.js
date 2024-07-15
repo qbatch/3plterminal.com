@@ -4,6 +4,10 @@ import { media } from "../../theme/media-mixins";
 const AccordionSectionWrapper = styled.div`
 padding-top: 97px;
 padding-bottom: 100px;
+${media.sm`
+  padding-top: 76px;
+  padding-bottom: 76px;
+`}
 .header {
     position: relative;
     display: flex;
@@ -22,6 +26,7 @@ padding-bottom: 100px;
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.headingH1};
         line-height: 42px;
+        margin-bottom:0;
         `}
       img{
         position: absolute;
@@ -52,6 +57,9 @@ padding-bottom: 100px;
 button.show-button{
   margin:auto;
   margin-top:48px;
+  ${media.sm`
+  margin-top:24px;
+    `}
 }
 `;
 export { AccordionSectionWrapper }

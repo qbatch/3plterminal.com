@@ -7,8 +7,8 @@ import  ChatIcon from '../../../Static/chat-network.svg';
 
 import { DemoWrapper } from './style'
 
-const Button = lazy(() => import( '../../Components/Button'));
-const InputGroup = lazy(() => import( '../../Components/Input'));
+const Button = lazy(() => import('../../Components/Button'));
+const InputGroup = lazy(() => import('../../Components/Input'));
 
 const Demo = () => {
   const [formValues, setFormValues] = useState({
@@ -84,7 +84,7 @@ const Demo = () => {
                     <div className='select-wrapper'>
                       <label>Features</label>
                       <Form.Select aria-label="Default select example">
-                        <option>Open this select menu</option>
+                        <option>Select feature(s) for live demo</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>

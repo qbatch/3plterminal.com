@@ -1,6 +1,7 @@
 import React, { lazy } from 'react'
 
 import { RecordsWrapper } from './style'
+import Marquee from 'react-fast-marquee';
 
 const Container = lazy(() => import('../../Components/Container'));
 
@@ -30,6 +31,21 @@ const Records = () => {
             </div>
           ))}
         </div>
+          <div className='marque-slider'>
+            <Marquee
+              speed={50}
+              direction="right"
+            >
+              <div className='card-wrapper'>
+                {RecordsData.map((item, index) => (
+                  <div key={index} className='count-item'>
+                    <h2>{item.count}</h2>
+                    <h3>{item.text}</h3>
+                  </div>
+                ))}
+              </div>
+            </Marquee>
+          </div>
       </Container>
     </RecordsWrapper>
   )

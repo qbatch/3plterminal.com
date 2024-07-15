@@ -3,6 +3,9 @@ import { media } from "../../theme/media-mixins";
 
 const AccordionWrapper = styled.div`
 margin-top: 48px;
+${media.sm`
+  margin-top: 32px;
+`}
 .text-wrapper{
   display: flex;
   flex-direction: column;

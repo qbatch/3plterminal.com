@@ -3,6 +3,9 @@ import { media } from "../../theme/media-mixins";
 
 const FeaturesTabWrapper = styled.div`
 padding-top: 100px;
+${media.sm`
+padding: 0;
+`}
 .label-text{
   text-align: center;
   font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -53,6 +56,9 @@ h2{
     overflow: auto;
     grid-gap:8px;
     padding: 48px 0;
+    ${media.sm`
+      padding: 76px 0 0;
+      `}
     p{
       padding: 16px 47px 16px 47px;
       gap: 0px;

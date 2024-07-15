@@ -1,10 +1,11 @@
-import React, { lazy } from 'react'
-import { AccordionSectionWrapper } from './style'
+import React from 'react'
 
-const HeadingIcon = lazy(() => import( '../../../Static/heading-top-icon.svg'));
-const ArrowIcon = lazy(() => import( '../../../Static/spring-roll-left.svg'));
-const Container  = lazy(() => import('../../Components/Container'));
-const Accordion = lazy(() => import( '../../Components/Accordion'));
+import HeadingIcon from '../../../Static/heading-top-icon.svg';
+import ArrowIcon from '../../../Static/spring-roll-left.svg';
+import Container from '../../Components/Container';
+import Accordion from '../../Components/Accordion';
+
+import { AccordionSectionWrapper } from './style'
 
 const AccordionSection = () => {
   const accordionItems = [

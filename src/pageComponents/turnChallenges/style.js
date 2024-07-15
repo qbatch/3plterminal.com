@@ -15,6 +15,7 @@ margin-top: 100px;
 ${media.sm`
   font-size: ${({ theme }) => theme.fonts.headingH1};
   line-height: 42px;
+  margin-top: 76px;
 `}
 span{
   color: ${({ theme }) => theme.colors.success};
@@ -37,8 +38,12 @@ img{
     margin: auto;
     margin-top: 64px;
     ${media.lg`
-    justify-content:start;
+      justify-content:start;
       `}
+      ${media.sm`
+        margin-top: 36px;
+      `}
+
       .items{
           min-width:403px;
 .header {

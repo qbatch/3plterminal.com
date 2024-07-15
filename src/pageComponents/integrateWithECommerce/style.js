@@ -5,6 +5,9 @@ const IntegrateWithECommerceWrapper = styled.div`
 padding: 95px 0;
 position: relative;
 background: linear-gradient(0deg, rgba(208, 225, 239, 0) 0%, rgba(208, 225, 239, 0.0331063) 2.38%, rgba(208, 225, 239, 0.7) 50.35%, rgba(208, 225, 239, 0.08092) 94.26%, rgba(208, 225, 239, 0) 100%);
+${media.sm`
+  padding: 76px 0 0;
+`}
 .header {
     position: relative;
     display: flex;

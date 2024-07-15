@@ -63,6 +63,7 @@ padding: 56px 0px 32px;
     ${media.sm`
     flex-wrap:wrap ;
     grid-row-gap:16px;
+    flex-direction:column-reverse;
       `}
     ${media.xs`
     flex-wrap:wrap ;
