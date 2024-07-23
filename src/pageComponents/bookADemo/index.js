@@ -70,7 +70,7 @@ const Demo = () => {
   return (
     <DemoWrapper id='demo'>
       <div className='demo-wrapper'>
-        <div className='demo-items'>
+        <div className='demo-items first-item'>
           <div className='heading'>
             <h2>Book Free Demo <img className='heading-icon' src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
             <p>We created software to simplify FBA inbound prep, making it simple,</p>

@@ -14,22 +14,32 @@ const Footer = () => {
   const Data = [
     {
       img:FB,
+      alt:'facebook',
+      title:'facebook',
       href:''
     },
     {
       img:Instagram,
+      alt:'Instagram',
+      title:'Instagram',
       href:''
     },
     {
       img:Linkedin,
+      alt:'Linkedin',
+      title:'Linkedin',
       href:''
     },
     {
       img:Youtube,
+      alt:'Youtube',
+      title:'Youtube',
       href:''
     },
     {
       img:Twitter,
+      alt:'Twitter',
+      title:'Twitter',
       href:''
     },
   ]
@@ -54,7 +64,7 @@ const Footer = () => {
           <div className='social-icons'>
             <p>Follow Us at</p>
             {Data.map((item, index) => (
-              <Link href={item.href} key={index}><img src={item.img} loading='lazy' alt={item.img} title={item.img} /></Link>
+              <Link href={item.href} key={index}><img src={item.img} loading='lazy' alt={item.alt} title={item.title} /></Link>
             ))}
           </div>
         </div>

@@ -28,7 +28,7 @@ const Header = () => {
           </div>
           <div className='navbar-actions'>
             <a href="#">Sign In</a>
-            <Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button>
+            <a href='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></a>
           </div>
           <img onClick={handleShow} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
         </div>
@@ -38,14 +38,14 @@ const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>
-              <Dropdown />
-              <a href="#">Demo</a>
-              <a href="#">Pricing</a>
-              <a href="#">FAQ’s</a>
+            <a onClick={handleClose} href="#features">Features</a>
+            <a onClick={handleClose} href="#demo">Demo</a>
+            <a onClick={handleClose} href="#">Pricing</a>
+            <a onClick={handleClose} href="#faqs">FAQ’s</a>
             </div>
             <div className='navbar-actions-mobile'>
-              <a href="#">Sign In</a>
-              <Button image={true} alt="ChatIcon">Book Free Demo</Button>
+              <a onClick={handleClose} href="#">Sign In</a>
+              <a onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></a>
             </div>
           </Offcanvas.Body>
         </Offcanvas>

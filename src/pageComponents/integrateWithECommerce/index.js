@@ -17,25 +17,40 @@ const Container = lazy(() => import('../../Components/Container'));
 const IntegrateWithECommerce = () => {
   const data = [
     {
-      img:Amazon
+      img:Amazon,
+      title:'Amazon',
+      alt:'Amazon'
+
     },
     {
-      img:Walmart
+      img:Walmart,
+      title:'Walmart',
+      alt:'Walmart'
     },
     {
-      img:Shopify
+      img:Shopify,
+      title:'Shopify',
+      alt:'Shopify'
     },
     {
-      img:WooCommerce
+      img:WooCommerce,
+      title:'WooCommerce',
+      alt:'WooCommerce'
     },
     {
-      img:Magento
+      img:Magento,
+      title:'Magento',
+      alt:'Magento'
     },
     {
-      img:BigCommerce
+      img:BigCommerce,
+      title:'BigCommerce',
+      alt:'BigCommerce'
     },
     {
-      img:Ebay
+      img:Ebay,
+      title:'Ebay',
+      alt:'Ebay'
     },
   ]
   return (
@@ -43,7 +58,7 @@ const IntegrateWithECommerce = () => {
       <Container>
         <div className='header'>
           <h2>Integrate with <span><img src={HeadingIcon} loading='lazy' alt="HeadingIcon" title='HeadingIcon' />E-commerce</span> Marketplaces</h2>
-          <img className='roll-image' loading='lazy' src={ArrowIcon} alt="ArrowIcon"/>
+          <img className='roll-image' loading='lazy' src={ArrowIcon} title="ArrowIcon" alt="ArrowIcon"/>
           <p>Our Prep and Pack Software makes it easy to create, add, or customize any integration suitable for your business.</p>
         </div>
         <Marquee
@@ -54,7 +69,7 @@ const IntegrateWithECommerce = () => {
         >
           <div>
         {data.map((item,index) => (
-          <img className={`image-${index}`} loading='lazy' key={index} src={item.img} title={item.img} />
+          <img className={`image-${index}`} loading='lazy' key={index} src={item.img} title={item.title} alt={item.alt} />
         ))}
         </div>
       </Marquee>

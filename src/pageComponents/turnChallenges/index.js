@@ -50,7 +50,7 @@ const TurnChallenges = () => {
   const renderItem = (item, index) => (
     <div className='items' key={item.id || index}>
       <div className={`header ${index === 0 ? 'header' : index === 1 ? 'header-2' : index === 2 ? 'header-3' : ''}`}>
-        <img src={item.header.imgSrc} loading='lazy' title={item.header.title} alt={item.header.title} />
+        <img src={item.header.imgSrc} loading='lazy' title='header-icon' alt='header-icon' />
         <h3>{item.header.title}</h3>
       </div>
       <div className={`content ${index === 2 ? 'content-2' : ''}`}>
@@ -64,7 +64,7 @@ const TurnChallenges = () => {
   return (
     <TurnChallengesWrapper>
       <Container>
-        <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} al="HeadingIcon" /></span></h2>
+        <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2>
         <div className='items-wrapper'>
         {data.map((item, index) => renderItem(item, index))}
         </div>

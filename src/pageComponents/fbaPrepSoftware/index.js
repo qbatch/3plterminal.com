@@ -16,7 +16,7 @@ const FbaPrepSoftware = () => {
      <p>After years of struggling with prep and pack seller inefficiencies, gazillion PDF files, label resizing tools,
        and bundles of labels, we decided to develop the simplest and most efficient FBA Prep software available!</p>
        <div className='buttons-group'>
-        <Button image={true}>Book Free Demo</Button>
+       <a href='#demo'><Button image={true}>Book Free Demo</Button></a>
        </div>
        <img className='banner-image' loading='lazy' title='banner-image' src={MainBannerImage} alt="banner-image"/>
     </FbaPrepSoftwareWrapper>
