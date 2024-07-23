@@ -1,4 +1,5 @@
 import React, { useState, lazy } from 'react';
+import { Link } from 'gatsby'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Logo from '../../../Static/3pl-logo.svg'
 import ChatIcon from '../../../Static/chat-network.svg'
@@ -19,33 +20,33 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <a href='#home'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></a>
+          <Link href='#home'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link>
           <div className='navbar-links'>
-            <a href="#features">Features</a>
-            <a href="#demo">Demo</a>
-            <a href="#">Pricing</a>
-            <a href="#faqs">FAQ’s</a>
+            <Link href="#features">Features</Link>
+            <Link href="#demo">Demo</Link>
+            <Link href="#">Pricing</Link>
+            <Link href="#faqs">FAQ’s</Link>
           </div>
           <div className='navbar-actions'>
-            <a href="#">Sign In</a>
-            <a href='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></a>
+            <Link href="#">Sign In</Link>
+            <Link href='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></Link>
           </div>
           <img onClick={handleShow} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
         </div>
         <Offcanvas placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title><a href='/'><img src={Logo} loading='lazy' alt="Logo" title='Logo' /></a></Offcanvas.Title>
+            <Offcanvas.Title><Link href='/'><img src={Logo} loading='lazy' alt="Logo" title='Logo' /></Link></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>
-            <a onClick={handleClose} href="#features">Features</a>
-            <a onClick={handleClose} href="#demo">Demo</a>
-            <a onClick={handleClose} href="#">Pricing</a>
-            <a onClick={handleClose} href="#faqs">FAQ’s</a>
+            <Link onClick={handleClose} href="#features">Features</Link>
+            <Link onClick={handleClose} href="#demo">Demo</Link>
+            <Link onClick={handleClose} href="#">Pricing</Link>
+            <Link onClick={handleClose} href="#faqs">FAQ’s</Link>
             </div>
             <div className='navbar-actions-mobile'>
-              <a onClick={handleClose} href="#">Sign In</a>
-              <a onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></a>
+              <Link onClick={handleClose} href="#">Sign In</Link>
+              <Link onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></Link>
             </div>
           </Offcanvas.Body>
         </Offcanvas>

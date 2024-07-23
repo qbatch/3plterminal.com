@@ -7,40 +7,40 @@ import Linkedin from '../../../Static/linkedin.svg'
 import Youtube from '../../../Static/youtube.svg'
 import Twitter from '../../../Static/twitter.svg'
 import { FooterWrapper } from './style'
-const Container = lazy(() => import( '../Container'));
-const Button = lazy(() => import( '../Button'));
+const Container = lazy(() => import('../Container'));
+const Button = lazy(() => import('../Button'));
 
 const Footer = () => {
   const Data = [
     {
-      img:FB,
-      alt:'facebook',
-      title:'facebook',
-      href:''
+      img: FB,
+      alt: 'facebook',
+      title: 'facebook',
+      href: ''
     },
     {
-      img:Instagram,
-      alt:'Instagram',
-      title:'Instagram',
-      href:''
+      img: Instagram,
+      alt: 'Instagram',
+      title: 'Instagram',
+      href: ''
     },
     {
-      img:Linkedin,
-      alt:'Linkedin',
-      title:'Linkedin',
-      href:''
+      img: Linkedin,
+      alt: 'Linkedin',
+      title: 'Linkedin',
+      href: ''
     },
     {
-      img:Youtube,
-      alt:'Youtube',
-      title:'Youtube',
-      href:''
+      img: Youtube,
+      alt: 'Youtube',
+      title: 'Youtube',
+      href: ''
     },
     {
-      img:Twitter,
-      alt:'Twitter',
-      title:'Twitter',
-      href:''
+      img: Twitter,
+      alt: 'Twitter',
+      title: 'Twitter',
+      href: ''
     },
   ]
   return (
@@ -49,10 +49,10 @@ const Footer = () => {
         <div className='footer'>
           <img src={Logo} alt='Logo' title='Logo' />
           <div className='links-wrapper'>
-            <Link>Features</Link>
-            <Link>Demo</Link>
-            <Link>Pricing</Link>
-            <Link>FAQ’s</Link>
+            <Link href="#features">Features</Link>
+            <Link href="#demo">Demo</Link>
+            <Link href="#">Pricing</Link>
+            <Link href="#faqs">FAQ’s</Link>
           </div>
           <div className='buttons-wrapper'>
             <Button>Login</Button>
