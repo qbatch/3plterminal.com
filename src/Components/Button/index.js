@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import ChatIcon from '../../../Static/chat-network.svg';
 import { ButtonStyleWrapper } from './style';
 

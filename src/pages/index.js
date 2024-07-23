@@ -1,4 +1,5 @@
 import React, { lazy } from "react"
+import { SEO } from "../seo/seo";
 
 const FbaPrepSoftware = lazy(() => import("../pageComponents/fbaPrepSoftware"));
 const Records = lazy(() => import("../pageComponents/records"));
@@ -31,4 +32,9 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <SEO title="Best Automation Software for Prep Centers | 3PL Terminal" description="3PL Terminal is the top software for prep centers to streamline your FBA and FBM operations. Optimize inventory for Amazon sellers and enhance efficiency.">
+    <script type="application/ld+json">{JSON.stringify({})}</script>
+  </SEO>
+)
+

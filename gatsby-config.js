@@ -8,7 +8,7 @@ module.exports = {
     description: `Example project for the Gatsby Head API`,
     twitterUsername: `@gatsbyjs`,
     image: `/gatsby-icon.png`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.qbatch.com`,
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp","gatsby-plugin-styled-components",  {
     resolve: 'gatsby-source-filesystem',
@@ -18,6 +18,12 @@ module.exports = {
     },
     __key: "images"
   },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.qbatch.com`,
+      },
+    },
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {

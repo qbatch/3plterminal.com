@@ -1,4 +1,4 @@
-import React, { useState,lazy } from 'react';
+import React, { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import plusIcon from '../../../Static/plus.svg';
 import minusIcon from '../../../Static/minus.svg';  // Make sure this file exists
