@@ -40,7 +40,7 @@ const Header = () => {
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>
             <Link onClick={handleClose} href="#features">Features</Link>
-            <Link onClick={handleClose} href="#demo">Demo</Link>
+            <Link onClick={handleClose} href="#demo">Demmo</Link>
             <Link onClick={handleClose} href="#">Pricing</Link>
             <Link onClick={handleClose} href="#faqs">FAQ’s</Link>
             </div>
