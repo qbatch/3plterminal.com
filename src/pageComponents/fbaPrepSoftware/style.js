@@ -10,6 +10,7 @@ flex-direction: column;
 text-align: center;
 background: linear-gradient(0deg, rgba(208, 225, 239, 0.128) 0%, rgba(208, 225, 239, 0.48) 70.5%, rgba(208, 225, 239, 0) 100%);
 position: relative;
+padding-top: 132px;
 ${media.sm`
 padding: 46px 0px 32px;
 `}

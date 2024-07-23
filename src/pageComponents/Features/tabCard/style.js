@@ -43,7 +43,6 @@ ${media.sm`
       display: flex;
       flex-direction: column;
       grid-row-gap: 4px;
-      padding-top:16px;
       h3{
         margin:0;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};

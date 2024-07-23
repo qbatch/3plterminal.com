@@ -23,7 +23,7 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
           <Accordion.Item eventKey={index.toString()} key={index}>
             <Accordion.Header>
               <div className="d-flex w-100 align-items-center justify-content-between">
-                <p>{item.header}</p>
+                <h3 className='heading-wrapper'>{item.header}</h3>
                 <img
                   src={activeKey === index.toString() ? minusIcon : plusIcon}
                   alt={activeKey === index.toString() ? 'Collapse' : 'Expand'}

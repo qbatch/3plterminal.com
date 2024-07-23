@@ -19,15 +19,15 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <a href='/'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></a>
+          <a href='#home'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></a>
           <div className='navbar-links'>
-            <Dropdown />
-            <a href="">Dekmo</a>
-            <a href="">Pricing</a>
-            <a href="">FAQ’s</a>
+            <a href="#features">Features</a>
+            <a href="#demo">Demo</a>
+            <a href="#">Pricing</a>
+            <a href="#faqs">FAQ’s</a>
           </div>
           <div className='navbar-actions'>
-            <a href=''>Sign In</a>
+            <a href="#">Sign In</a>
             <Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button>
           </div>
           <img onClick={handleShow} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
@@ -39,12 +39,12 @@ const Header = () => {
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>
               <Dropdown />
-              <a href="">Demo</a>
-              <a href="">Pricing</a>
-              <a href="">FAQ’s</a>
+              <a href="#">Demo</a>
+              <a href="#">Pricing</a>
+              <a href="#">FAQ’s</a>
             </div>
             <div className='navbar-actions-mobile'>
-              <a href=''>Sign In</a>
+              <a href="#">Sign In</a>
               <Button image={true} alt="ChatIcon">Book Free Demo</Button>
             </div>
           </Offcanvas.Body>

@@ -86,7 +86,7 @@ const AccordionSection = () => {
     },
   ];
   return (
-    <AccordionSectionWrapper>
+    <AccordionSectionWrapper id='faqs'>
       <Container>
        <div className='header'>
           <h2>Frequently Asked Questions<img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>

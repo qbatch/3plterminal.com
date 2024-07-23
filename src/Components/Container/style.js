@@ -3,7 +3,10 @@ import { media } from "../../theme/media-mixins";
 
 const ContainerStyleWrapper = styled.div`
 max-width: 1800px;
-margin: auto 72px;
+margin: auto;
+${media.xl`
+  margin: auto 72px;
+`}
 ${media.lg`
 margin: auto 32px;
 `}

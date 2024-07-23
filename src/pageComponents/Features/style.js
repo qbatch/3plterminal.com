@@ -52,17 +52,24 @@ h2{
 }
 }
 .tabs-wrapper {
-    display: flex;
-    overflow: auto;
-    grid-gap:8px;
-    padding: 48px 0;
-    ${media.sm`
+  display: flex;
+  overflow: auto;
+  grid-gap:8px;
+  padding: 48px 0;
+  .select-wrapper{
+    display:none;
+    ${media.xs`
+    display: block;
+      `}
+  }
+  ${media.sm`
       padding: 76px 0 0;
       `}
     p{
       padding: 16px 47px 16px 47px;
       gap: 0px;
-      width:fit-content;
+      width:222px;
+      text-align:center;
       white-space: nowrap;
       border:1px solid ${({theme}) => theme.colors.borderColor};
       font-size:${({theme}) => theme.fonts.headingH5};
@@ -75,6 +82,9 @@ h2{
       ${media.sm`
         padding: 13px 25px;
         `}
+        ${media.xs`
+        display: none;
+          `}
       &.active{
         background: ${({theme}) => theme.colors.primaryColor};
         color: ${({theme}) => theme.colors.whiteColor};

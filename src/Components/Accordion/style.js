@@ -26,7 +26,7 @@ button.accordion-button {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
       `}
-    p {
+    h3 {
       margin: 0;
       font-size: ${({theme}) => theme.fonts.headingH3};
       font-weight: ${({theme}) => theme.fontWeight.bold};

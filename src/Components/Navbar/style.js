@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../theme/media-mixins";
 const NavbarStyleWrapper = styled.div`
     background:  ${({ theme }) => theme.colors.whiteColor};
-    position: sticky;
+    position: fixed;
     width: 100%;
     left: 0;
     right: 0;

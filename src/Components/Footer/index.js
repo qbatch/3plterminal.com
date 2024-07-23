@@ -46,7 +46,6 @@ const Footer = () => {
           </div>
           <div className='buttons-wrapper'>
             <Button>Login</Button>
-            <Button>Sign up</Button>
           </div>
         </div>
         <div className='divider' />

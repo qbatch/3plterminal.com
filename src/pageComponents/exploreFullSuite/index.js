@@ -74,7 +74,7 @@ const ExploreContent = () => {
   );
   return (
     <Container>
-      <ExploreContentWrapper>
+      <ExploreContentWrapper id='explore'>
         <div className='header-wrapper'>
           <img className='arrow-image' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon" />
           <h2><img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /> Explore Full-suite of Prep, Pack,

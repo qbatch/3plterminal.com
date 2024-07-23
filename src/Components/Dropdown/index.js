@@ -11,9 +11,9 @@ const Dropdown = () => {
       <img src={ArrowIcon} loading='lazy' title="arrow-icon" alt="arrow-icon" />
       </div>
      {showDropdown ? <div className='dropdown-items'>
-        <a onClick={() => setShowDropdown(false)} href=''>Home</a>
-        <a onClick={() => setShowDropdown(false)} href=''>Home</a>
-        <a onClick={() => setShowDropdown(false)} href=''>Home</a>
+        <a onClick={() => setShowDropdown(false)} href="#">Home</a>
+        <a onClick={() => setShowDropdown(false)} href="#">Home</a>
+        <a onClick={() => setShowDropdown(false)} href="#">Home</a>
       </div> : null}
     </DropdownStyleWrapper>
   )

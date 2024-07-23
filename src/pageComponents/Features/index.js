@@ -9,9 +9,10 @@ import Tab4 from '../../../Static/billing.svg'
 import Tab5 from '../../../Static/action-log.svg'
 
 import { FeaturesTabWrapper } from './style'
+import { Form } from 'react-bootstrap'
 
 const FirstTab = lazy(() => import('./tabCard'));
-const Container = lazy(() => import( '../../Components/Container'));
+const Container = lazy(() => import('../../Components/Container'));
 
 const dataTab1 = [
   {
@@ -114,52 +115,70 @@ const tabsData = [
       graphImage={Graph}
     />
   },
-  { id: 2,
-     label: 'Prep and Pack',
-      content:  <FirstTab
+  {
+    id: 2,
+    label: 'Prep and Pack',
+    content: <FirstTab
       title="Prep and Pack"
       data={dataTab2}
       checkboxImage={Checkbox}
       graphImage={Tab2}
-    /> },
-  { id: 3,
-     label: 'Outbound Shipments', 
-     content: <FirstTab
-     title="Outbound Shipments"
-     data={dataTab3}
-     checkboxImage={Checkbox}
-     graphImage={Tab3}
-   />
-     },
-  { id: 4,
-     label: 'Billing',
-      content: <FirstTab
+    />
+  },
+  {
+    id: 3,
+    label: 'Outbound Shipments',
+    content: <FirstTab
+      title="Outbound Shipments"
+      data={dataTab3}
+      checkboxImage={Checkbox}
+      graphImage={Tab3}
+    />
+  },
+  {
+    id: 4,
+    label: 'Billing',
+    content: <FirstTab
       title="Billing"
       data={dataTab4}
       checkboxImage={Checkbox}
       graphImage={Tab4}
-    /> 
-    },
-  { id: 5, label: 'Actions Logs & Support', content: <FirstTab
-    title="Actions Logs & Support"
-    data={dataTab5}
-    checkboxImage={Checkbox}
-    graphImage={Tab5}
-  /> }
+    />
+  },
+  {
+    id: 5, label: 'Actions Logs & Support', content: <FirstTab
+      title="Actions Logs & Support"
+      data={dataTab5}
+      checkboxImage={Checkbox}
+      graphImage={Tab5}
+    />
+  }
 ];
 
 const FeaturesTab = () => {
   const [activeTab, setActiveTab] = useState(tabsData[0].id);
 
   return (
-      <Container>
-    <FeaturesTabWrapper>
+    <Container>
+      <FeaturesTabWrapper id="features">
         <p className='label-text'>Features</p>
         <div className='title'>
           <h2>Tired of under reported items and frustrated customers? Give them reasons why <span>you're different and trustworthy.</span></h2>
           <img src={ArrowDown} title='banner-image' alt="arrow" />
         </div>
         <div className='tabs-wrapper'>
+          <Form.Select className='select-wrapper' aria-label="Default select example" value={activeTab} onChange={(e) => setActiveTab(parseInt(e.target.value))}>
+            {tabsData.map(tab => (
+              <option
+                key={tab.id}
+                value={tab.id}
+                className={activeTab === tab.id ? 'active' : ''}
+              >
+                {tab.label}
+              </option>
+            ))}
+          </Form.Select>
+
           {tabsData.map(tab => (
             <p
               key={tab.id}
@@ -174,8 +193,8 @@ const FeaturesTab = () => {
         <div className='content-wrapper'>
           {tabsData.find(tab => tab.id === activeTab)?.content}
         </div>
-    </FeaturesTabWrapper>
-      </Container>
+      </FeaturesTabWrapper>
+    </Container>
   )
 }
 

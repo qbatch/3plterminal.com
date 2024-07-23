@@ -43,9 +43,7 @@ padding: 56px 0px 32px;
     .buttons-wrapper{
       display: flex;
       button{
-        &:nth-child(2){
           background-color: #2864BC;
-        }
       }
     }
 }

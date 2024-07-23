@@ -67,7 +67,7 @@ const RecordsWrapper = styled.div`
     text-align: center;
     margin-right:50px;
     .count-item{
-      max-width:300px;
+      width:250px;
     h2{
         font-family: "Caveat", cursive;
         font-size: 90px;

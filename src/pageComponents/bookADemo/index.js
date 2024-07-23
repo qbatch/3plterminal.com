@@ -68,7 +68,7 @@ const Demo = () => {
 
 
   return (
-    <DemoWrapper>
+    <DemoWrapper id='demo'>
       <div className='demo-wrapper'>
         <div className='demo-items'>
           <div className='heading'>

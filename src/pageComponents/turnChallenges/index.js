@@ -6,6 +6,7 @@ import WithSoftware from '../../../Static/with-Software.svg';
 import WithOutSoftware from '../../../Static/without-Software.svg';
 
 import { TurnChallengesWrapper } from './style'
+import Slider from '../../Components/Slider';
 
 const Container = lazy(() => import('../../Components/Container'));
 
@@ -46,26 +47,30 @@ const TurnChallenges = () => {
       ]
     }
   ];
+  const renderItem = (item, index) => (
+    <div className='items' key={item.id || index}>
+      <div className={`header ${index === 0 ? 'header' : index === 1 ? 'header-2' : index === 2 ? 'header-3' : ''}`}>
+        <img src={item.header.imgSrc} loading='lazy' title={item.header.title} alt={item.header.title} />
+        <h3>{item.header.title}</h3>
+      </div>
+      <div className={`content ${index === 2 ? 'content-2' : ''}`}>
+        {item.content.map((text, textIndex) => (
+          <p className='label' key={textIndex}>{text}</p>
+        ))}
+      </div>
+    </div>
+  );
+  
   return (
     <TurnChallengesWrapper>
       <Container>
         <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} al="HeadingIcon" /></span></h2>
         <div className='items-wrapper'>
-          {data.map((item, index) => (
-            <div className='items' key={index}>
-              <div className={`header ${index === 0 ? 'header' : index === 1 ? 'header-2' : index === 2 ? 'header-3' : ''}`}>
-                <img src={item.header.imgSrc} loading='lazy' title={item.header.title} alt={item.header.title} />
-                <h3>{item.header.title}</h3>
-              </div>
-              <div className={`content ${index === 2 ? 'content-2' : ''}`}>
-                {item.content.map((text, index) => (
-                  <p className='label' key={index}>{text}</p>
-                ))}
-              </div>
-            </div>
-          ))}
+        {data.map((item, index) => renderItem(item, index))}
         </div>
-
+        <div className='items-wrapper slider-div'>
+        <Slider data={data} renderItem={renderItem} />
+        </div>
       </Container>
     </TurnChallengesWrapper>
   )

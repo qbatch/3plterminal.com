@@ -43,9 +43,21 @@ img{
       ${media.sm`
         margin-top: 36px;
       `}
+      ${media.xs`
+        overflow:inherit;
+        margin: none;
+        display: none;
+        justify-content: inherit;
+        `}
+        &.slider-div{
+          display:block;
+        }
 
       .items{
           min-width:403px;
+          ${media.xs`
+          min-width:100%;
+            `}
 .header {
     display: flex;
     align-items: center;
