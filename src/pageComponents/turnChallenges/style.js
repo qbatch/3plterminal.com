@@ -30,7 +30,7 @@ img{
 
 }
 .slick-track{
-  height: 800px;
+  height: 600px;
 }
 .items-wrapper {
     display: flex;
@@ -69,6 +69,9 @@ img{
     border: 1px solid #CECECE80;
     padding: 42px 0;
     background: #FAFAFA;
+    ${media.xs`
+    padding: 16px;
+      `}
     &.header-2{
       background-color: #FFDCDC;
     }
@@ -83,6 +86,9 @@ img{
   &.content-2 {
     box-shadow: 0px 55px 106px 0px #00000014;
     background: #fff;
+    ${media.xs`
+      box-shadow: none;
+      `}
     p{
       &:last-child {
     border-bottom-right-radius: 24px;
@@ -100,6 +106,10 @@ img{
     text-align: left;
     margin: 0;
     min-height: 106px;
+    ${media.xs`
+    padding: 16px;
+    min-height:82px;
+      `}
   }
 }
 }
