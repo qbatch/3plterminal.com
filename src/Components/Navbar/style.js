@@ -13,6 +13,8 @@ const NavbarStyleWrapper = styled.div`
     .navbar{
       padding:0;
       width: 100%;
+      display: flex;
+      justify-content: space-between;
       img.logo{
       ${media.xs`
         width: 154px;
