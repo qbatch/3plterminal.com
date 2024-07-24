@@ -31,7 +31,7 @@ const Header = () => {
             <Link href="#">Sign In</Link>
             <Link href='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></Link>
           </div>
-          <a onClick={handleShow} href='#'><img  className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' /></a>
+            <img onClick={handleClose} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
         </div>
         <Offcanvas placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
