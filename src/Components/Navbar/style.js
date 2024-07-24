@@ -12,10 +12,11 @@ const NavbarStyleWrapper = styled.div`
     padding: 13px 0;
     .navbar{
       padding:0;
+      width: 100%;
       img.logo{
-          ${media.xs`
-          width: 154px;
-            `}
+      ${media.xs`
+        width: 154px;
+      `}
       }
     }
 .navbar-links {
