@@ -29,6 +29,9 @@ img{
 }
 
 }
+.slick-track{
+  height: 800px;
+}
 .items-wrapper {
     display: flex;
     justify-content: center;

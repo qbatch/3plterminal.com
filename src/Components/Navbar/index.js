@@ -31,7 +31,7 @@ const Header = () => {
             <Link href="#">Sign In</Link>
             <Link href='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></Link>
           </div>
-          <img onClick={handleShow} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
+          <a onClick={handleShow} href='#'><img  className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' /></a>
         </div>
         <Offcanvas placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
@@ -39,14 +39,14 @@ const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>
-            <Link onClick={handleClose} href="#features">Features</Link>
-            <Link onClick={handleClose} href="#demo">Demmo</Link>
-            <Link onClick={handleClose} href="#">Pricing</Link>
-            <Link onClick={handleClose} href="#faqs">FAQ’s</Link>
+            <a onClick={handleClose} href="#features">Features</a>
+            <a onClick={handleClose} href="#demo">Demo</a>
+            <a onClick={handleClose} href="#">Pricing</a>
+            <a onClick={handleClose} href="#faqs">FAQ’s</a>
             </div>
             <div className='navbar-actions-mobile'>
-              <Link onClick={handleClose} href="#">Sign In</Link>
-              <Link onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></Link>
+              <a onClick={handleClose} href="#">Sign In</a>
+              <a onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></a>
             </div>
           </Offcanvas.Body>
         </Offcanvas>
