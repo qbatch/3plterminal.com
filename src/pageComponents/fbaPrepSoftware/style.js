@@ -15,7 +15,7 @@ a{
   text-decoration: none;
 }
 ${media.sm`
-padding: 46px 0px 32px;
+padding: 46px 16px 32px;
 padding-top: 100px;
 `}
 .buttons-group{

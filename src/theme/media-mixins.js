@@ -5,7 +5,7 @@ import { css } from "styled-components";
    mobile:'575px',
    sm: "767px",
    md: "991px",
-   customElementsBreakPoint:'1120px',
+   customElementsBreakPoint:'1871px',
    lg: "1199px",
    standard: "1279px",
    customBrakePoint: "1360px",
