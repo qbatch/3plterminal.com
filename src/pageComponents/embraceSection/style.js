@@ -38,19 +38,24 @@ p{
   margin:0;
   font-weight:100;
   font-size:24px;
-  ${media.sm`
-    font-size:16px;
-    `}
   margin-left: 45px;
   &::after{
     position:absolute;
-    top:12px;
+    top:17px;
     left:-40px;
     content:"";
     width:100px;
     height:2px;
     background-color:#2864BC;
-  }
+    ${media.sm`
+      top: 11px;
+      left: -29px;
+      `}
+}
+  ${media.sm`
+    font-size:16px;
+    margin-left: 17px;
+    `}
 }
 a{
 img{
