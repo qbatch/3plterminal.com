@@ -57,9 +57,6 @@ ${media.sm`
 button.show-button{
   margin:auto;
   margin-top:48px;
-  ${media.sm`
-  margin-top:24px;
-    `}
 }
 `;
 export { AccordionSectionWrapper }

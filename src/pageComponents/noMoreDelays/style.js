@@ -8,6 +8,9 @@ background-position: right;
 background-repeat: no-repeat;
 background-size: cover;
 padding: 52px 0px 47px;
+${media.sm`
+margin-top:75px;
+`}
 ${media.lg`
   padding: 52px 0 47px;
 `}
