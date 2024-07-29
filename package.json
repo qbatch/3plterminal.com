@@ -1,8 +1,8 @@
 {
   "name": "3pl_landing_page",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "3pl_landing_page",
+  "description": "3PL Terminal: SaaS for 3PL Prep Centers",
   "author": "kalash-qbatch",
   "keywords": [
     "gatsby"
@@ -28,7 +28,6 @@
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.2.0",
@@ -37,5 +36,8 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
