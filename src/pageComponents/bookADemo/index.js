@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 import DemoImage from '../../../Static/demo-image.svg';
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
-import  ChatIcon from '../../../Static/chat-network.svg';
+import ChatIcon from '../../../Static/chat-network.svg';
 
 import { DemoWrapper } from './style'
 
@@ -60,10 +60,8 @@ const Demo = () => {
   const inputFields = [
     { controlId: 'formUsername', label: 'Username', name: 'username', type: 'text', placeholder: 'Enter' },
     { controlId: 'formEmail', label: 'Email address', name: 'email', type: 'email', placeholder: 'Enter' },
-    { controlId: 'formPhoneNumber', label: 'Phone Number', name: 'phoneNumber', type: 'tel', placeholder: 'Enter' },
+    { controlId: 'formPhoneNumber', label: 'Phone NO#', name: 'phoneNumber', type: 'tel', placeholder: 'Enter' },
     { controlId: 'formCompany', label: 'Company', name: 'company', type: 'text', placeholder: 'Enter' },
-    { controlId: 'formCompany', label: 'Company', name: 'company', type: 'text', placeholder: 'Enter' },
-    { controlId: 'formDescription', label: 'Description', name: 'description', type: 'text', placeholder: 'Enter' }
   ];
 
 
@@ -78,21 +76,7 @@ const Demo = () => {
           </div>
           <Form onSubmit={handleSubmit}>
             <div className='inputs-wrapper'>
-              {inputFields.map((field, index) => {
-                if (index === 4) {
-                  return (
-                    <div className='select-wrapper'>
-                      <label>Features</label>
-                      <Form.Select aria-label="Default select example">
-                        <option>Select feature(s) for live demo</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </Form.Select>
-                    </div>
-                  )
-                }
-
+              {inputFields.map((field) => {
                 return (
                   <InputGroup
                     key={field.controlId}
@@ -109,7 +93,18 @@ const Demo = () => {
                 )
               })}
             </div>
-
+            <InputGroup
+                as='textarea'
+                controlId='formDescription'
+                className="mt-4 pt-1"
+                label='Description'
+                name='description'
+                placeholder='Enter'
+                row={3}
+                value={formValues.description}
+                onChange={handleInputChange}
+                error={errors.description}
+              />
             <Button image={ChatIcon} type="submit">Start Demo</Button>
           </Form>
         </div>

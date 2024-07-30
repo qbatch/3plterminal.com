@@ -56,11 +56,38 @@ h2{
   overflow: auto;
   grid-gap:8px;
   padding: 48px 0;
-  .select-wrapper{
+  .custom-select-icon .form-select {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1.5em;
+}
+  .select-overlay-wrapper{
+    position:relative;
+    width:100%;
+    cursor: pointer;
     display:none;
+    img.arrow-select{
+    position: absolute;
+    right: 16px;
+    top: 21px;
+    font-size: 24px;
+    z-index:1;
+    user-select:none;
+    pointer-events:none;
+    }
     ${media.xs`
     display: block;
       `}
+  }
+  .select-wrapper{
+    background: #002046;
+    color: #fff;
+    padding: 15px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow:none;
+    line-height: 18px;
   }
   ${media.sm`
       padding: 76px 0 0;

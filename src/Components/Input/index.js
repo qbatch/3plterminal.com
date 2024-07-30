@@ -11,14 +11,19 @@ const InputGroup = ({
   value,
   onChange,
   error,
-  name
+  name,
+  as,
+  className,
+  row
 }) => {
   return (
-    <InputWrapper>
+    <InputWrapper className={className}>
       <Form.Group controlId={controlId}>
         <Form.Label>{label}</Form.Label>
         <Form.Control
           type={type}
+          as={as}
+          rows={row}
           placeholder={placeholder}
           value={value}
           onChange={onChange}

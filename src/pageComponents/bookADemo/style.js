@@ -62,6 +62,7 @@ margin-bottom: 99px;
       `}
     ${media.sm`
       max-width: 100%;
+      display: none;
       `}
   }
   &:nth-child(2){

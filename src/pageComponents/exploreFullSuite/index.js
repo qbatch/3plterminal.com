@@ -82,7 +82,7 @@ const ExploreContent = () => {
         </div>
         <div className='card-items-wrapper'>
           {Data.map((item, index) => (
-            <Card index={index} CardIcon={item.icon} title={item.title} text={item.text} heading={item.heading} />
+            <Card key={index} CardIcon={item.icon} title={item.title} text={item.text} heading={item.heading} />
           ))}
         </div>
         <ResponsiveSlider data={Data} renderItem={cardRenderItem} />

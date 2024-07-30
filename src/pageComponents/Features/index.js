@@ -7,6 +7,7 @@ import Tab2 from '../../../Static/tab2.svg'
 import Tab3 from '../../../Static/tab3.svg'
 import Tab4 from '../../../Static/billing.svg'
 import Tab5 from '../../../Static/action-log.svg'
+import Arrow from '../../../static/arrow-down.svg'
 
 import { FeaturesTabWrapper } from './style'
 import { Form } from 'react-bootstrap'
@@ -167,6 +168,9 @@ const FeaturesTab = () => {
           <img src={ArrowDown} title='banner-image' alt="arrow" />
         </div>
         <div className='tabs-wrapper'>
+          <div className='select-overlay-wrapper'>
+          <img className='arrow-select' src={Arrow} alt="Arrow" title='Arrow' loading='lazy'/>
+
           <Form.Select className='select-wrapper' aria-label="Default select example" value={activeTab} onChange={(e) => setActiveTab(parseInt(e.target.value))}>
             {tabsData.map(tab => (
               <option
@@ -178,11 +182,10 @@ const FeaturesTab = () => {
               </option>
             ))}
           </Form.Select>
-
+          </div>
           {tabsData.map(tab => (
             <p
               key={tab.id}
-              active={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={activeTab === tab.id ? 'active' : ''}
             >

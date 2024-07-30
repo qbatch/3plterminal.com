@@ -16,14 +16,21 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
   const handleToggle = (eventKey) => {
     setActiveKey(activeKey === eventKey ? null : eventKey);
   };
+  const CustomAccordionHeader = ({ children }) => {
+    return (
+      <h3 className="accordion-header">
+        {children}
+      </h3>
+    );
+  };
   return (
     <AccordionWrapper>
       <Accordion activeKey={activeKey} onSelect={handleToggle}>
         {items.slice(0, visibleCount).map((item, index) => (
           <Accordion.Item eventKey={index.toString()} key={index}>
-            <Accordion.Header>
+            <Accordion.Header as={CustomAccordionHeader}>
               <div className="d-flex w-100 align-items-center justify-content-between">
-                <h3 className='heading-wrapper'>{item.header}</h3>
+                <p className='heading-wrapper'>{item.header}</p>
                 <img
                   src={activeKey === index.toString() ? minusIcon : plusIcon}
                   alt={activeKey === index.toString() ? 'Collapse' : 'Expand'}
@@ -41,7 +48,7 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
               </div>
               {item.data ? item.data.map((dataItem, dataIndex) => (
                 <div className='heading-content' key={dataIndex}>
-                  <h3>{dataItem.heading}</h3>
+                  <p className='heading'>{dataItem.heading}</p>
                   <p>{dataItem.text}</p>
                 </div>
               )) : null}

@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 const InputWrapper = styled.div`
-.select-wrapper{
   label{
     font-size: 16px;
     font-weight: ${({theme}) => theme.fontWeight.regular};
     line-height: 14px;
     text-align: left;
-    color:${({theme}) => theme.colors.bodyText};
-}
+    color:#535E63;
 }
 input{
   border:0.5px solid ${({theme}) => theme.colors.roundStroke};
@@ -18,7 +16,7 @@ input{
   font-weight: ${({theme}) => theme.fontWeight.regular};
   line-height: 18px;
   text-align: left;
-  color:${({theme}) => theme.colors.bodyText};
+  color:#212A2F;
 }
 
 `;
