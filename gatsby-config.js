@@ -16,19 +16,17 @@ module.exports = {
       "path": "static/"
     },
     __key: "images"
-  },
-    {
+  }, {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://3plterminal.com`,
       },
-    },
-    {
+    }, {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "YOUR_GOOGLE_ANALYTICS_TRACKING_ID", // Google Analytics / GA
+          "G-Z9KZ145MYN", // Google Analytics / GA
           // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -48,13 +46,23 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
-    },
-    {
+    }, {
+      resolve: `gatsby-plugin-clarity`,
+      options: {
+        // String value for your clarity project id
+        // Project id is found in your clarity dashboard url
+        // https://clarity.microsoft.com/projects/view/{clarity_project_id}/
+        clarity_project_id: "nf5oh8fjb0",
+        // Boolean value for enabling clarity while developing
+        // true will enable clarity tracking code on both development and production environments
+        // false will enable clarity tracking code on production environment only
+        enable_on_dev_env: true,
+      }
+    }, {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: './static/favicon_logo.png',
       },
     },
   ],
-
 };
