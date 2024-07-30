@@ -50,6 +50,11 @@ margin-bottom: 99px;
 .demo-items{
   width: 100%;
   
+  &:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
     img.heading-icon{
       position:absolute;
       left:0;
@@ -64,11 +69,6 @@ margin-bottom: 99px;
       max-width: 100%;
       display: none;
       `}
-  }
-  &:nth-child(2){
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   form {
     margin-top:40px;

@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
+import Marquee from 'react-fast-marquee';
 
 import { RecordsWrapper } from './style'
-import Marquee from 'react-fast-marquee';
 
 const Container = lazy(() => import('../../Components/Container'));
 

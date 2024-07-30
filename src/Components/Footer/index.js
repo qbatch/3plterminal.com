@@ -55,7 +55,7 @@ const Footer = () => {
             <Link to="#faqs">FAQ’s</Link>
           </div>
           <div className='buttons-wrapper'>
-            <Button>Login</Button>
+            <Button>Sign In</Button>
           </div>
         </div>
         <div className='divider' />

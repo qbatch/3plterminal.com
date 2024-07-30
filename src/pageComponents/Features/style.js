@@ -93,13 +93,13 @@ h2{
       padding: 76px 0 0;
       `}
     p{
-      padding: 16px 47px 16px 47px;
+      padding: 16px;
       gap: 0px;
       width:222px;
       text-align:center;
       white-space: nowrap;
       border:1px solid ${({theme}) => theme.colors.borderColor};
-      font-size:${({theme}) => theme.fonts.headingH5};
+      font-size:${({theme}) => theme.fonts.headingH3};
       font-weight:${({theme}) => theme.fontWeight.medium};
       border-radius: 30px;
       box-shadow: 0px 4px 24px 0px #0000000D;

@@ -6,8 +6,8 @@ import WithSoftware from '../../../Static/with-Software.svg';
 import WithOutSoftware from '../../../Static/without-Software.svg';
 
 import { TurnChallengesWrapper } from './style'
-import Slider from '../../Components/Slider';
 
+const Slider = lazy(() => import('../../Components/Slider'));
 const Container = lazy(() => import('../../Components/Container'));
 
 
