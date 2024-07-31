@@ -56,12 +56,6 @@ h2{
   overflow: auto;
   grid-gap:8px;
   padding: 48px 0;
-  .custom-select-icon .form-select {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 1.5em;
-}
   .select-overlay-wrapper{
     position:relative;
     width:100%;
@@ -88,6 +82,7 @@ h2{
     font-weight: 700;
     box-shadow:none;
     line-height: 18px;
+    border:none;
   }
   ${media.sm`
       padding: 76px 0 0;
