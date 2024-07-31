@@ -6,7 +6,6 @@ import ChatIcon from '../../../Static/chat-network.svg'
 import BurgerIcon from '../../../Static/burger-icon.svg'
 import { NavbarStyleWrapper } from './style';
 
-const Dropdown = lazy(() => import('../Dropdown'));
 const Container = lazy(() => import('../Container'));
 const Button  = lazy(() => import( '../Button'));
 
