@@ -64,7 +64,7 @@ const Footer = () => {
           <div className='social-icons'>
             <p>Follow Us at</p>
             {Data.map((item, index) => (
-              <Link to={item.href} key={index}><img src={item.img} loading='lazy' alt={item.alt} title={item.title} /></Link>
+              <Link to={item.href} target="_blank" key={index}><img src={item.img} loading='lazy' alt={item.alt} title={item.title} /></Link>
             ))}
           </div>
         </div>
