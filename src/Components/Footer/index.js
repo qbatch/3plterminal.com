@@ -16,31 +16,31 @@ const Footer = () => {
       img: FB,
       alt: 'facebook',
       title: 'facebook',
-      href: ''
+      href: 'https://facebook.com/3plterminal'
     },
     {
       img: Instagram,
       alt: 'Instagram',
       title: 'Instagram',
-      href: ''
+      href: 'https://www.instagram.com/3pl.terminal'
     },
     {
       img: Linkedin,
       alt: 'Linkedin',
       title: 'Linkedin',
-      href: ''
+      href: 'https://www.linkedin.com/company/3plterminal/'
     },
     {
       img: Youtube,
       alt: 'Youtube',
       title: 'Youtube',
-      href: ''
+      href: '#'
     },
     {
       img: Twitter,
       alt: 'Twitter',
       title: 'Twitter',
-      href: ''
+      href: '#'
     },
   ]
   return (
