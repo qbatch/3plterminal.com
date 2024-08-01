@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll.svg';
@@ -85,7 +85,7 @@ const ExploreContent = () => {
             <Card key={index} CardIcon={item.icon} title={item.title} text={item.text} heading={item.heading} />
           ))}
         </div>
-        <ResponsiveSlider data={Data} renderItem={cardRenderItem} />
+       <Suspense fallback={null}> <ResponsiveSlider data={Data} renderItem={cardRenderItem} /></Suspense>
         <Button>Wanna know how a specific feature works?</Button>
       </ExploreContentWrapper>
     </Container>

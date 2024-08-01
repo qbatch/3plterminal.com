@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import Factor from '../../../Static/Factors.svg';
@@ -69,7 +69,7 @@ const TurnChallenges = () => {
         {data.map((item, index) => renderItem(item, index))}
         </div>
         <div className='items-wrapper slider-div'>
-        <Slider data={data} renderItem={renderItem} />
+        <Suspense fallback={null}><Slider data={data} renderItem={renderItem} /></Suspense>
         </div>
       </Container>
     </TurnChallengesWrapper>

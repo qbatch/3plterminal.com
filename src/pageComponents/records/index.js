@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 import Marquee from 'react-fast-marquee';
 
 import { RecordsWrapper } from './style'
@@ -32,6 +32,7 @@ const Records = () => {
           ))}
         </div>
           <div className='marque-slider'>
+            <Suspense fallback={null}>
             <Marquee
               speed={50}
               direction="right"
@@ -45,6 +46,7 @@ const Records = () => {
                 ))}
               </div>
             </Marquee>
+            </Suspense>
           </div>
       </Container>
     </RecordsWrapper>
