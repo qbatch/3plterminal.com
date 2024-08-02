@@ -16,31 +16,31 @@ const Footer = () => {
       img: FB,
       alt: 'facebook',
       title: 'facebook',
-      href: ''
+      href: 'https://facebook.com/3plterminal'
     },
     {
       img: Instagram,
       alt: 'Instagram',
       title: 'Instagram',
-      href: ''
+      href: 'https://www.instagram.com/3pl.terminal'
     },
     {
       img: Linkedin,
       alt: 'Linkedin',
       title: 'Linkedin',
-      href: ''
+      href: 'https://www.linkedin.com/company/3plterminal/'
     },
     {
       img: Youtube,
       alt: 'Youtube',
       title: 'Youtube',
-      href: ''
+      href: '#'
     },
     {
       img: Twitter,
       alt: 'Twitter',
       title: 'Twitter',
-      href: ''
+      href: '#'
     },
   ]
   return (
@@ -55,7 +55,7 @@ const Footer = () => {
             <Link to="#faqs">FAQ’s</Link>
           </div>
           <div className='buttons-wrapper'>
-            <Button>Login</Button>
+          <Link to="https://app.3plterminal.com/"><Button>Sign In</Button></Link>
           </div>
         </div>
         <div className='divider' />
@@ -64,7 +64,7 @@ const Footer = () => {
           <div className='social-icons'>
             <p>Follow Us at</p>
             {Data.map((item, index) => (
-              <Link to={item.href} key={index}><img src={item.img} loading='lazy' alt={item.alt} title={item.title} /></Link>
+              <Link to={item.href} target="_blank" key={index}><img src={item.img} loading='lazy' alt={item.alt} title={item.title} /></Link>
             ))}
           </div>
         </div>

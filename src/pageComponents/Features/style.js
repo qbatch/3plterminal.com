@@ -56,12 +56,6 @@ h2{
   overflow: auto;
   grid-gap:8px;
   padding: 48px 0;
-  .custom-select-icon .form-select {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 1.5em;
-}
   .select-overlay-wrapper{
     position:relative;
     width:100%;
@@ -88,18 +82,19 @@ h2{
     font-weight: 700;
     box-shadow:none;
     line-height: 18px;
+    border:none;
   }
   ${media.sm`
       padding: 76px 0 0;
       `}
     p{
-      padding: 16px 47px 16px 47px;
+      padding: 16px;
       gap: 0px;
       width:222px;
       text-align:center;
       white-space: nowrap;
       border:1px solid ${({theme}) => theme.colors.borderColor};
-      font-size:${({theme}) => theme.fonts.headingH5};
+      font-size:${({theme}) => theme.fonts.headingH3};
       font-weight:${({theme}) => theme.fontWeight.medium};
       border-radius: 30px;
       box-shadow: 0px 4px 24px 0px #0000000D;

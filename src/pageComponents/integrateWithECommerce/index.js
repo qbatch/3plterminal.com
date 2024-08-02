@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 import Marquee from 'react-fast-marquee';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
@@ -14,6 +14,7 @@ import Ebay from '../../../Static/ebay.svg'
 import { IntegrateWithECommerceWrapper } from './style'
 
 const Container = lazy(() => import('../../Components/Container'));
+
 const IntegrateWithECommerce = () => {
   const data = [
     {
@@ -61,6 +62,7 @@ const IntegrateWithECommerce = () => {
           <img className='roll-image' loading='lazy' src={ArrowIcon} title="ArrowIcon" alt="ArrowIcon"/>
           <p>Our Prep and Pack Software makes it easy to create, add, or customize any integration suitable for your business.</p>
         </div>
+        <Suspense fallback={null}>
         <Marquee
         //  gradient={true}
         //  gradientWidth="15%"
@@ -73,6 +75,7 @@ const IntegrateWithECommerce = () => {
         ))}
         </div>
       </Marquee>
+      </Suspense>
       </Container>
     </IntegrateWithECommerceWrapper>
   )

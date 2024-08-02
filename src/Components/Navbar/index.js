@@ -6,7 +6,6 @@ import ChatIcon from '../../../Static/chat-network.svg'
 import BurgerIcon from '../../../Static/burger-icon.svg'
 import { NavbarStyleWrapper } from './style';
 
-const Dropdown = lazy(() => import('../Dropdown'));
 const Container = lazy(() => import('../Container'));
 const Button  = lazy(() => import( '../Button'));
 
@@ -35,7 +34,7 @@ const Header = () => {
         </div>
         <Offcanvas placement='end' show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title><Link to='/'><img src={Logo} loading='lazy' alt="Logo" title='Logo' /></Link></Offcanvas.Title>
+            <Offcanvas.Title> <Link to='#home'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>

@@ -1,4 +1,4 @@
-import React, { lazy } from "react"
+import React, { lazy, Suspense } from "react"
 import { SEO } from "../seo/seo";
 
 const FbaPrepSoftware = lazy(() => import("../pageComponents/fbaPrepSoftware"));
@@ -15,18 +15,20 @@ const Layout = lazy(() => import("../Components/Layout/layout"));
 
 const IndexPage = () => {
   return (
-<Layout>
-  <FbaPrepSoftware/>
-  <Records />
-  <FeaturesTab />
-  <ExploreContent />
-  <EmbraceSection />
-  <TurnChallenges />
-  <IntegrateWithECommerce />
-  <NoMoreDelays />
-  <AccordionSection />
-  <Demo />
-</Layout>
+    <Suspense fallback={null}>
+      <Layout>
+        <FbaPrepSoftware />
+        <Records />
+        <FeaturesTab />
+        <ExploreContent />
+        <EmbraceSection />
+        <TurnChallenges />
+        <IntegrateWithECommerce />
+        <NoMoreDelays />
+        <AccordionSection />
+        <Demo />
+      </Layout>
+    </Suspense>
   )
 }
 
