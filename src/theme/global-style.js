@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { media } from "../theme/media-mixins";
 
 const GlobalStyles = createGlobalStyle`
     body{
