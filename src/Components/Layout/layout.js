@@ -66,9 +66,9 @@ const Layout = ({ children, nonce }) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
         <html lang='en-US' />
-        <script type="application/ld+json" nonce={jsonLdData.nonce}>
+        {/* <script type="application/ld+json" nonce={jsonLdData.nonce}>
         {JSON.stringify(jsonLdData)}
-      </script>
+      </script> */}
       </Helmet>
       <GlobalStyle />
       {children}
