@@ -66,9 +66,6 @@ const Layout = ({ children }) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
         <html lang='en-US' />
-        <script type="application/ld+json">
-        {/* {JSON.stringify(jsonLdData)} */}
-      </script>
       </Helmet>
       <GlobalStyle />
       {children}
