@@ -14,7 +14,7 @@ padding: 0;
 }
 .title{
   display: flex;
-  max-width: 1300px;
+  max-width: 1350px;
 margin: auto;
 ${media.md`
 position: relative;
