@@ -2,7 +2,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/3pl-terminal",
   siteMetadata: {
     title: `Best Automation Software for Prep Centers | 3PL Terminal`,
     description: `3PL Terminal is the top software for prep centers to streamline your FBA and FBM operations. Optimize inventory for Amazon sellers and enhance efficiency.`,
