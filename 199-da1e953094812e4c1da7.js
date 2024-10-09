@@ -1,0 +1,7 @@
+"use strict";(self.webpackChunk_3pl_landing_page=self.webpackChunk_3pl_landing_page||[]).push([[199],{4199:function(e,t,n){n.r(t),n.d(t,{default:function(){return o}});var l=n(6540),r=n(7581),a=n(641);const i=r.default.div.withConfig({displayName:"style__CardWrapper",componentId:"sc-6h8cru-0"})([".card-item{display:flex;flex-direction:column;align-items:flex-start;grid-row-gap:12px;img{max-width:100%;width:100%;}"," .content{h3{font-size:",";font-weight:",";color:",";line-height:30px;text-align:left;margin-bottom:12px;","}p{max-width:100%;font-size:",";font-weight:",";color:",";line-height:24px;text-align:left;margin:0;}}}"],a.$.xs`
+      align-items: center;
+      `,(e=>{let{theme:t}=e;return t.fonts.headingH3}),(e=>{let{theme:t}=e;return t.fontWeight.bold}),(e=>{let{theme:t}=e;return t.colors.bodyTextVariant}),a.$.sm`
+          font-size:${e=>{let{theme:t}=e;return t.fonts.baseFontSize}};
+          margin-bottom: 4px;
+          `,(e=>{let{theme:t}=e;return t.fonts.baseFontSize}),(e=>{let{theme:t}=e;return t.fontWeight.regular}),(e=>{let{theme:t}=e;return t.colors.bodyText}));var o=e=>{let{heading:t,CardIcon:n,text:r}=e;return l.createElement(i,null,l.createElement("div",{className:"card-item"},l.createElement("img",{src:n,loading:"lazy",title:"CardIcon",alt:"CardIcon"}),l.createElement("div",{className:"content"},l.createElement("h3",null,t),l.createElement("p",null,r))))}}}]);
+//# sourceMappingURL=199-da1e953094812e4c1da7.js.map
