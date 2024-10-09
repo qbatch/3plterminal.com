@@ -4,6 +4,8 @@ import { media } from "../../theme/media-mixins";
 const AccordionSectionWrapper = styled.div`
 padding-top: 97px;
 padding-bottom: 100px;
+max-width: 1208px;
+margin: auto;
 ${media.sm`
   padding-top: 76px;
   padding-bottom: 76px;
