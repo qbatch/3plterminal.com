@@ -15,7 +15,7 @@ const Layout = lazy(() => import("../Components/Layout/layout"));
 
 const IndexPage = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={"loading"}>
       <Layout>
         <FbaPrepSoftware />
         <Records />
