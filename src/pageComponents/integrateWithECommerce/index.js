@@ -12,6 +12,8 @@ import Magento from '../../../Static/magento.svg'
 import BigCommerce from '../../../Static/bigcommerce.svg'
 import Ebay from '../../../Static/ebay.svg'
 
+import Loader from '../../Components/Loader';
+
 import { IntegrateWithECommerceWrapper } from './style'
 
 const Container = lazy(() => import('../../Components/Container'));
@@ -57,6 +59,7 @@ const IntegrateWithECommerce = () => {
     },
   ]
   return (
+    <Suspense fallback={<Loader />}>
     <IntegrateWithECommerceWrapper>
       <ScrollAnimation animateIn="zoomIn" delay={200}>
       <Container>
@@ -82,6 +85,7 @@ const IntegrateWithECommerce = () => {
       </Container>
       </ScrollAnimation>
     </IntegrateWithECommerceWrapper>
+    </Suspense>
   )
 }
 

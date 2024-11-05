@@ -6,6 +6,8 @@ import Factor from '../../../Static/Factors.svg';
 import WithSoftware from '../../../Static/with-Software.svg';
 import WithOutSoftware from '../../../Static/without-Software.svg';
 
+import Loader from '../../Components/Loader';
+
 import { TurnChallengesWrapper } from './style'
 
 const Slider = lazy(() => import('../../Components/Slider'));
@@ -63,11 +65,12 @@ const TurnChallenges = () => {
   );
   
   return (
+    <Suspense fallback={<Loader />}>
     <TurnChallengesWrapper>
       <Container>
       <ScrollAnimation animateIn="bounce" delay={200}>
       <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2></ScrollAnimation>
-      ><ScrollAnimation animateIn="slideInUp" delay={200}> <div className='items-wrapper'>
+      <ScrollAnimation animateIn="slideInUp" delay={200}> <div className='items-wrapper'>
         {data.map((item, index) => renderItem(item, index))}
         </div></ScrollAnimation>
         <div className='items-wrapper slider-div'>
@@ -75,6 +78,7 @@ const TurnChallenges = () => {
         </div>
       </Container>
     </TurnChallengesWrapper>
+    </Suspense>
   )
 }
 

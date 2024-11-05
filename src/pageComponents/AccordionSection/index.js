@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll-left.svg';
+
 import Container from '../../Components/Container';
 import Accordion from '../../Components/Accordion';
+import Loader from '../../Components/Loader';
 
 import { AccordionSectionWrapper } from './style'
 
@@ -88,6 +90,7 @@ const AccordionSection = () => {
     },
   ];
   return (
+    <Suspense fallback={<Loader />}>
     <AccordionSectionWrapper id='faqs'>
       <Container>
       <ScrollAnimation animateIn="bounce" delay={200}>
@@ -99,6 +102,7 @@ const AccordionSection = () => {
         <Accordion items={accordionItems} bodyExtra={true} defaultActiveKey="0" />
         </Container>
     </AccordionSectionWrapper>
+    </Suspense>
   )
 }
 

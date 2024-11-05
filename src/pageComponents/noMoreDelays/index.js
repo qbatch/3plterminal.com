@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import Button from '../../../Static/button-2.svg'
 import Heading from '../../../Static/no-more-lose-heading.svg'
 
 import Container from '../../Components/Container'
+import Loader from '../../Components/Loader'
 
 import { NoMoreDelaysWrapper } from './style'
 
 const NoMoreDelays = () => {
 
   return (
+    <Suspense fallback={<Loader />}>
     <NoMoreDelaysWrapper>
       <Container>
       <ScrollAnimation animateIn="slideInLeft" delay={200}>
@@ -23,6 +25,7 @@ const NoMoreDelays = () => {
         </ScrollAnimation>
       </Container>
     </NoMoreDelaysWrapper>
+    </Suspense>
   )
 }
 

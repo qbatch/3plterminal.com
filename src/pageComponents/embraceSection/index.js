@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import Button from '../../../Static/button-1.svg'
 import Heading from '../../../Static/bid-farewell-heading.svg'
 
-import { EmbraceSectionWrapper } from './style'
 import Container from '../../Components/Container'
+import Loader from '../../Components/Loader'
+
+import { EmbraceSectionWrapper } from './style'
 
 const EmbraceSection = () => {
   
   return (
+    <Suspense fallback={<Loader />}>
     <EmbraceSectionWrapper>
       <ScrollAnimation animateIn="slideInLeft" delay={200}>
       <Container>
@@ -24,7 +27,7 @@ const EmbraceSection = () => {
       </Container>
       </ScrollAnimation>
     </EmbraceSectionWrapper>
-
+</Suspense>
   )
 }
 

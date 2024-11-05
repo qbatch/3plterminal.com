@@ -6,6 +6,8 @@ import DemoImage from '../../../Static/demo-image.svg';
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ChatIcon from '../../../Static/chat-network.svg';
 
+import Loader from '../../Components/Loader';
+
 import { DemoWrapper } from './style'
 
 const Button = lazy(() => import('../../Components/Button'));
@@ -69,6 +71,7 @@ const Demo = () => {
 
 
   return (
+    <Suspense fallback={<Loader />}>
     <DemoWrapper id='demo'>
       <div className='demo-wrapper'>
         <ScrollAnimation animateIn="slideInLeft" delay={200} className='demo-items first-item'>
@@ -116,6 +119,7 @@ const Demo = () => {
       </ScrollAnimation>
       </div>
     </DemoWrapper>
+    </Suspense>
   )
 }
 

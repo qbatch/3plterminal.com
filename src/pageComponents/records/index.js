@@ -2,6 +2,8 @@ import React, { lazy, Suspense } from 'react'
 import Marquee from 'react-fast-marquee';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import Loader from '../../Components/Loader';
+
 import { RecordsWrapper } from './style'
 
 const Container = lazy(() => import('../../Components/Container'));
@@ -28,6 +30,7 @@ const Records = () => {
     },
   ]
   return (
+    <Suspense fallback={<Loader />}>
     <RecordsWrapper>
       <Container>
         <div className='text-overflow-ui'>
@@ -59,6 +62,7 @@ const Records = () => {
         </div>
       </Container>
     </RecordsWrapper>
+    </Suspense>
   )
 }
 

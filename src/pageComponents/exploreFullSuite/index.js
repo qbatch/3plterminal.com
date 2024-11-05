@@ -12,6 +12,8 @@ import Card6 from '../../../Static/card-6.svg';
 import Card7 from '../../../Static/card-7.svg';
 import Card8 from '../../../Static/card-8.svg';
 
+import Loader from '../../Components/Loader';
+
 import { ExploreContentWrapper } from './style';
 
 const Card = lazy(() => import('../../Components/Card'));
@@ -90,6 +92,7 @@ const ExploreContent = () => {
     <Card key={index} index={index} CardIcon={item.icon} text={item.text} heading={item.heading} />
   );
   return (
+    <Suspense fallback={<Loader />}>
     <Container>
       <ExploreContentWrapper id='explore'>
         <ScrollAnimation animateIn="bounce" delay={200}>
@@ -112,6 +115,7 @@ const ExploreContent = () => {
         </ScrollAnimation>
       </ExploreContentWrapper>
     </Container>
+    </Suspense>
   )
 }
 

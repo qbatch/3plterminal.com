@@ -1,5 +1,6 @@
-import React, { useState, lazy } from 'react'
+import React, { useState, lazy, Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
+import { Form } from 'react-bootstrap'
 
 import ArrowDown from '../../../Static/spring-roll-left.svg'
 import Checkbox from '../../../Static/checkbox.svg'
@@ -10,8 +11,9 @@ import Tab4 from '../../../Static/billing.svg'
 import Tab5 from '../../../Static/action-log.svg'
 import Arrow from '../../../static/arrow-down.svg'
 
+import Loader from '../../Components/Loader'
+
 import { FeaturesTabWrapper } from './style'
-import { Form } from 'react-bootstrap'
 
 const FirstTab = lazy(() => import('./tabCard'));
 const Container = lazy(() => import('../../Components/Container'));
@@ -161,6 +163,7 @@ const FeaturesTab = () => {
   const [activeTab, setActiveTab] = useState(tabsData[0].id);
 
   return (
+    <Suspense fallback={<Loader />}>
     <Container>
     <ScrollAnimation animateIn="slideInUp" delay={200}>
       <FeaturesTabWrapper id="features">
@@ -201,6 +204,7 @@ const FeaturesTab = () => {
       </FeaturesTabWrapper>
       </ScrollAnimation>
     </Container>
+    </Suspense>
   )
 }
 
