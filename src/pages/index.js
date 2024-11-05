@@ -1,6 +1,6 @@
-import React, { lazy, Suspense } from "react"
+import React, { lazy, Suspense, useEffect } from "react"
 import { SEO } from "../seo/seo";
-import Loader  from "../Components/Loader";
+import Loader from "../Components/Loader";
 
 import "/static/animate.css";
 
@@ -17,7 +17,27 @@ const Demo = lazy(() => import("../pageComponents/bookADemo"));
 const Layout = lazy(() => import("../Components/Layout/layout"));
 
 const IndexPage = () => {
+
+  useEffect(() => {
+    function loadGTM() {
+      const gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z9KZ145MYN';
+      document.head.appendChild(gtmScript);
   
+      gtmScript.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-Z9KZ145MYN');
+      };
+    }
+  
+    window.addEventListener('scroll', loadGTM, { once: true });
+    return () => window.removeEventListener('scroll', loadGTM);
+  }, []);
+  
+
   return (
     <Suspense fallback={<Loader />}>
       <Layout>
