@@ -1,4 +1,5 @@
 import React, { useState, lazy } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import ArrowDown from '../../../Static/spring-roll-left.svg'
 import Checkbox from '../../../Static/checkbox.svg'
@@ -161,6 +162,7 @@ const FeaturesTab = () => {
 
   return (
     <Container>
+    <ScrollAnimation animateIn="slideInUp" delay={200}>
       <FeaturesTabWrapper id="features">
         <p className='label-text'>Features</p>
         <div className='title'>
@@ -197,6 +199,7 @@ const FeaturesTab = () => {
           {tabsData.find(tab => tab.id === activeTab)?.content}
         </div>
       </FeaturesTabWrapper>
+      </ScrollAnimation>
     </Container>
   )
 }

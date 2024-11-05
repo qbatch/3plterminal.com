@@ -1,5 +1,8 @@
 import React, { lazy, Suspense } from "react"
 import { SEO } from "../seo/seo";
+import Loader  from "../Components/Loader";
+
+import "/static/animate.css";
 
 const FbaPrepSoftware = lazy(() => import("../pageComponents/fbaPrepSoftware"));
 const Records = lazy(() => import("../pageComponents/records"));
@@ -14,8 +17,9 @@ const Demo = lazy(() => import("../pageComponents/bookADemo"));
 const Layout = lazy(() => import("../Components/Layout/layout"));
 
 const IndexPage = () => {
+  
   return (
-    <Suspense fallback={"loading"}>
+    <Suspense fallback={<Loader />}>
       <Layout>
         <FbaPrepSoftware />
         <Records />

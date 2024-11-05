@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import Factor from '../../../Static/Factors.svg';
@@ -64,12 +65,13 @@ const TurnChallenges = () => {
   return (
     <TurnChallengesWrapper>
       <Container>
-        <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2>
-        <div className='items-wrapper'>
+      <ScrollAnimation animateIn="bounce" delay={200}>
+      <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2></ScrollAnimation>
+      ><ScrollAnimation animateIn="slideInUp" delay={200}> <div className='items-wrapper'>
         {data.map((item, index) => renderItem(item, index))}
-        </div>
+        </div></ScrollAnimation>
         <div className='items-wrapper slider-div'>
-        <Suspense fallback={null}><Slider data={data} renderItem={renderItem} /></Suspense>
+        <Suspense fallback={null}><ScrollAnimation animateIn="slideInUp" delay={200}><Slider data={data} renderItem={renderItem} /></ScrollAnimation></Suspense>
         </div>
       </Container>
     </TurnChallengesWrapper>

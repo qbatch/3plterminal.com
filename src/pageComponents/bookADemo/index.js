@@ -1,5 +1,6 @@
 import React, { useState, lazy } from 'react'
 import Form from 'react-bootstrap/Form';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import DemoImage from '../../../Static/demo-image.svg';
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
@@ -11,6 +12,7 @@ const Button = lazy(() => import('../../Components/Button'));
 const InputGroup = lazy(() => import('../../Components/Input'));
 
 const Demo = () => {
+
   const [formValues, setFormValues] = useState({
     username: '',
     email: '',
@@ -18,6 +20,7 @@ const Demo = () => {
     company: '',
     description: ''
   });
+  
   const [errors, setErrors] = useState({});
 
   const handleInputChange = (e) => {
@@ -68,7 +71,7 @@ const Demo = () => {
   return (
     <DemoWrapper id='demo'>
       <div className='demo-wrapper'>
-        <div className='demo-items first-item'>
+        <ScrollAnimation animateIn="slideInLeft" delay={200} className='demo-items first-item'>
           <div className='heading'>
             <h2>Book Free Demo <img className='heading-icon' src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
             <p>We created software to simplify FBA inbound prep, making it simple,</p>
@@ -107,10 +110,10 @@ const Demo = () => {
               />
             <Button image={ChatIcon} type="submit">Start Demo</Button>
           </Form>
-        </div>
-        <div className='demo-items'>
+        </ScrollAnimation>
+      <ScrollAnimation animateIn="slideInRight" delay={200} className='demo-items' >
           <img src={DemoImage} title="DemoImage" alt="DemoImage" />
-        </div>
+      </ScrollAnimation>
       </div>
     </DemoWrapper>
   )

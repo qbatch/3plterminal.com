@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll-left.svg';
@@ -8,6 +9,7 @@ import Accordion from '../../Components/Accordion';
 import { AccordionSectionWrapper } from './style'
 
 const AccordionSection = () => {
+  
   const accordionItems = [
     {
       header: 'What is FBA prep center management software, and how can it benefit my business?',
@@ -88,10 +90,12 @@ const AccordionSection = () => {
   return (
     <AccordionSectionWrapper id='faqs'>
       <Container>
+      <ScrollAnimation animateIn="bounce" delay={200}>
        <div className='header'>
           <h2>Frequently Asked Questions<img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
           <img className='roll-image' loading='lazy' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon"/>
         </div>
+        </ScrollAnimation>
         <Accordion items={accordionItems} bodyExtra={true} defaultActiveKey="0" />
         </Container>
     </AccordionSectionWrapper>

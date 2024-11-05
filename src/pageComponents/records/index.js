@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import Marquee from 'react-fast-marquee';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { RecordsWrapper } from './style'
 
@@ -9,15 +10,21 @@ const Records = () => {
   const RecordsData = [
     {
       count: '100K+',
-      text: 'Accuracy Rate'
+      text: 'Accuracy Rate',
+      delay: 100,
+      direction: 'slideInLeft'
     },
     {
       count: '1000+',
-      text: 'Total Received Batche’s'
+      text: 'Total Received Batche’s',
+      delay: 500,
+      direction: 'slideInLeft'
     },
     {
       count: '1000+',
-      text: 'Total Shipped Items'
+      text: 'Total Shipped Items',
+      delay: 700,
+      direction: 'slideInLeft'
     },
   ]
   return (
@@ -25,14 +32,16 @@ const Records = () => {
       <Container>
         <div className='text-overflow-ui'>
           {RecordsData.map((item, index) => (
-            <div key={index} className='count-item'>
-              <h2>{item.count}</h2>
-              <h3>{item.text}</h3>
-            </div>
+            <ScrollAnimation animateIn={item.direction} delay={item.delay}>
+              <div key={index} className='count-item'>
+                <h2>{item.count}</h2>
+                <h3>{item.text}</h3>
+              </div>
+            </ScrollAnimation>
           ))}
         </div>
-          <div className='marque-slider'>
-            <Suspense fallback={null}>
+        <div className='marque-slider'>
+          <Suspense fallback={null}>
             <Marquee
               speed={50}
               direction="right"
@@ -46,8 +55,8 @@ const Records = () => {
                 ))}
               </div>
             </Marquee>
-            </Suspense>
-          </div>
+          </Suspense>
+        </div>
       </Container>
     </RecordsWrapper>
   )

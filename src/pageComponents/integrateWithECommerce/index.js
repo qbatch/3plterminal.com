@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import Marquee from 'react-fast-marquee';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll.svg';
@@ -16,6 +17,7 @@ import { IntegrateWithECommerceWrapper } from './style'
 const Container = lazy(() => import('../../Components/Container'));
 
 const IntegrateWithECommerce = () => {
+  
   const data = [
     {
       img:Amazon,
@@ -56,6 +58,7 @@ const IntegrateWithECommerce = () => {
   ]
   return (
     <IntegrateWithECommerceWrapper>
+      <ScrollAnimation animateIn="zoomIn" delay={200}>
       <Container>
         <div className='header'>
           <h2>Integrate with <span><img src={HeadingIcon} loading='lazy' alt="HeadingIcon" title='HeadingIcon' />E-commerce</span> Marketplaces</h2>
@@ -77,6 +80,7 @@ const IntegrateWithECommerce = () => {
       </Marquee>
       </Suspense>
       </Container>
+      </ScrollAnimation>
     </IntegrateWithECommerceWrapper>
   )
 }
