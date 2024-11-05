@@ -1,4 +1,4 @@
-import React, { useState, lazy } from 'react'
+import React, { useState, lazy, Suspense } from 'react'
 import Form from 'react-bootstrap/Form';
 import ScrollAnimation from 'react-animate-on-scroll';
 
