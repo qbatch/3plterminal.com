@@ -58,7 +58,7 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
               </Accordion.Body>
             </Accordion.Item>
           ))}
-        </Accordion>¯
+        </Accordion>
       </ScrollAnimation>
       <ScrollAnimation animateIn="bounce" delay={200}>
         <Button className="show-button" onClick={handleShow}> {visibleCount < items.length ? 'Show More' : 'Show Less'}</Button>
