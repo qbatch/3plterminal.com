@@ -117,13 +117,12 @@ p{
   color:${({theme}) => theme.colors.bodyTextVariant};
   line-height: 24px;
   text-align: left;
+  ${media.sm`
+  font-size: ${({theme}) => theme.fonts.baseFontSize};
+`}
   span{
     font-family: "Caveat", cursive;
   }
-${media.sm`
-  font-size: ${({theme}) => theme.fonts.baseSize};
-`}
-
 }
 `;
 export { DemoWrapper }
