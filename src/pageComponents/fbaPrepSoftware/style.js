@@ -45,7 +45,7 @@ h1{
 h2{
   font-size:${({theme}) => theme.fonts.headingH1};
   font-weight:${({theme}) => theme.fontWeight.regular};
-  color:${({theme}) => theme.colors.bodyTextVariant};
+  color:${({theme}) => theme.colors.bodyText};
   margin: 0;
   padding-top: 12px;
   padding-bottom: 24px;

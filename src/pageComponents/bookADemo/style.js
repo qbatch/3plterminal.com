@@ -117,6 +117,9 @@ p{
   span{
     font-family: "Caveat", cursive;
   }
+${media.sm`
+  font-size: ${({theme}) => theme.fonts.baseSize};
+`}
 
 }
 `;

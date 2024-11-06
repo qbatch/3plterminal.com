@@ -8,7 +8,7 @@ max-width: 1208px;
 margin: auto;
 ${media.sm`
   padding-top: 76px;
-  padding-bottom: 76px;
+  padding-bottom: 16px;
 `}
 .header {
     position: relative;
