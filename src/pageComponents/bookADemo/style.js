@@ -93,6 +93,7 @@ button{
   margin-left: auto;
   ${media.sm`
   margin-top:24px;
+  margin-left: 0px;
     `}
 }
 .heading{
