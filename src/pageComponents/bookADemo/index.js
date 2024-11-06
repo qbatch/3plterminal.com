@@ -65,7 +65,7 @@ const Demo = () => {
   const inputFields = [
     { controlId: 'formUsername', label: 'Username', name: 'username', type: 'text', placeholder: 'Enter' },
     { controlId: 'formEmail', label: 'Email address', name: 'email', type: 'email', placeholder: 'Enter' },
-    { controlId: 'formPhoneNumber', label: 'Phone NO#', name: 'phoneNumber', type: 'tel', placeholder: 'Enter' },
+    { controlId: 'formPhoneNumber', label: 'Phone NO#', name: 'phoneNumber', type: 'number', placeholder: 'Enter' },
     { controlId: 'formCompany', label: 'Company', name: 'company', type: 'text', placeholder: 'Enter' },
   ];
 

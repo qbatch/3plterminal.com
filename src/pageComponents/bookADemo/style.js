@@ -3,6 +3,9 @@ import { media } from "../../theme/media-mixins";
 
 const DemoWrapper = styled.div`
 margin-bottom: 99px;
+${media.sm`
+  margin-bottom: 24px;
+`}
 .select-wrapper {
     display: flex;
     flex-direction: column;
