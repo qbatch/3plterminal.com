@@ -14,19 +14,19 @@ const Records = () => {
       count: '100K+',
       text: 'Accuracy Rate',
       delay: 100,
-      direction: 'slideInLeft'
+      direction: 'fadeIn'
     },
     {
       count: '1000+',
       text: 'Total Received Batche’s',
       delay: 500,
-      direction: 'slideInLeft'
+      direction: 'fadeIn'
     },
     {
       count: '1000+',
       text: 'Total Shipped Items',
       delay: 700,
-      direction: 'slideInLeft'
+      direction: 'fadeIn'
     },
   ]
   return (

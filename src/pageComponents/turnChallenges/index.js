@@ -5,6 +5,7 @@ import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import Factor from '../../../Static/Factors.svg';
 import WithSoftware from '../../../Static/with-Software.svg';
 import WithOutSoftware from '../../../Static/without-Software.svg';
+import ArrowDown from '../../../Static/spring-roll-left.svg'
 
 import Loader from '../../Components/Loader';
 
@@ -68,9 +69,10 @@ const TurnChallenges = () => {
     <Suspense fallback={<Loader />}>
     <TurnChallengesWrapper>
       <Container>
-      <ScrollAnimation animateIn="bounce" delay={200}>
+      <ScrollAnimation className='heading-wrapper' animateIn="bounce" delay={200}>
+      <img className='arrow-image' src={ArrowDown} title='ArrowIcon' alt="ArrowIcon" />
       <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2></ScrollAnimation>
-      <ScrollAnimation animateIn="slideInUp" delay={200}> <div className='items-wrapper'>
+      <ScrollAnimation animateIn="fadeIn" delay={200}> <div className='items-wrapper'>
         {data.map((item, index) => renderItem(item, index))}
         </div></ScrollAnimation>
         <div className='items-wrapper slider-div'>

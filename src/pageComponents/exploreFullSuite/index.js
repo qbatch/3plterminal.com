@@ -28,7 +28,7 @@ const ExploreContent = () => {
       text: 'Customize fields to capture vital product details for easy prep and management.',
       icon: Card1,
       title: 'Card1',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 100,
     },
     {
@@ -36,7 +36,7 @@ const ExploreContent = () => {
       text: 'Create purchase orders through manual input or file uploads using the integrated PO Builder feature.',
       icon: Card2,
       title: 'Card2',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 300,
     },
     {
@@ -44,7 +44,7 @@ const ExploreContent = () => {
       text: 'Eliminate possible errors in product receiving, storage, and shipment preparation processes.',
       icon: Card3,
       title: 'Card3',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 400,
     },
     {
@@ -52,7 +52,7 @@ const ExploreContent = () => {
       text: 'Access and maintain a detailed action log for each product, providing a thorough history for enhanced traceability.',
       icon: Card4,
       title: 'Card4',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 500,
     },
     {
@@ -60,7 +60,7 @@ const ExploreContent = () => {
       text: 'Foster linear communication with users at any stage of the prep process through our integrated built-in Support Tickets feature.',
       icon: Card5,
       title: 'Card5',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 600,
     },
     {
@@ -68,7 +68,7 @@ const ExploreContent = () => {
       text: 'Expedite shipment processes like Shipment Creation, Shipping, and integrated Box Content tracking when shipping to Amazon and Walmart.',
       icon: Card6,
       title: 'Card6',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 700,
     },
     {
@@ -76,15 +76,15 @@ const ExploreContent = () => {
       text: 'Smart billing module to charge your users for shipments or scheduled cycles for labeling, storage, and shipment services. ',
       icon: Card7,
       title: 'Card7',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 800,
     },
     {
-      heading: 'user Custom Profiles',
+      heading: 'User Custom Profiles',
       text: 'Customize profiles to match marketplace nuances and business needs effortlessly',
       icon: Card8,
       title: 'Card8',
-      direction: 'slideInUp',
+      direction: 'fadeIn',
       delay: 900,
     },
   ]
@@ -110,8 +110,8 @@ const ExploreContent = () => {
           ))}
         </div>
         <Suspense fallback={null}>  <ScrollAnimation animateIn="slideInUp" delay={200}><ResponsiveSlider data={Data} renderItem={cardRenderItem} /></ScrollAnimation></Suspense>
-        <ScrollAnimation animateIn="bounce" delay={200}>
-        <Button>Wanna know how a specific feature works?</Button>
+        <ScrollAnimation animateIn="fadeInUp" delay={200}>
+        <a href='#demo'><Button>Wanna know how a specific feature works?</Button></a>
         </ScrollAnimation>
       </ExploreContentWrapper>
     </Container>

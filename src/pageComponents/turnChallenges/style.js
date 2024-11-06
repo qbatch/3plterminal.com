@@ -3,6 +3,17 @@ import { media } from "../../theme/media-mixins";
 
 const TurnChallengesWrapper = styled.div`
 margin-bottom: 48px;
+.heading-wrapper.animated.bounce {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      ${media.sm`
+    display: none;
+      `}
+    }
+}
 h2{
 font-size: 40px;
 font-weight: ${({ theme }) => theme.fontWeight.bold};
@@ -35,11 +46,13 @@ img{
 .items-wrapper {
     display: flex;
     justify-content: center;
-    max-width: 1300px;
+    max-width: 1209px;
     width: 100%;
-    overflow: auto;
     margin: auto;
     margin-top: 64px;
+    ${media.customBrakePoint`
+      overflow: auto;
+      `}
     ${media.lg`
       justify-content:start;
       `}
@@ -80,12 +93,15 @@ img{
     }
     h3{
       margin: 0;
+      font-size: ${({theme}) => theme.fonts.headingH2};
+      font-weight: 600;
     }
 }
 .content{
   &.content-2 {
     box-shadow: 0px 55px 106px 0px #00000014;
     background: #fff;
+    border-bottom-right-radius: 23px;
     ${media.xs`
       box-shadow: none;
       `}

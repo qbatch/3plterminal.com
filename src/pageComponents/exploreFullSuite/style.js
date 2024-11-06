@@ -15,6 +15,9 @@ img.arrow-image{
     display: none;
       `}
 }
+a{
+  text-decoration: none;
+}
 h2{
   max-width: 700px;
     margin: auto;

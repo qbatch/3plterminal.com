@@ -43,6 +43,7 @@ ${media.sm`
       text-align: center;
       line-height: 32px;
       max-width: 903px;
+      font-size: ${({theme}) => theme.fonts.headingH2};
       margin-bottom: 56px;
       ${media.sm`
         line-height: 24px;

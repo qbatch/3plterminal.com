@@ -165,7 +165,7 @@ const FeaturesTab = () => {
   return (
     <Suspense fallback={<Loader />}>
     <Container>
-    <ScrollAnimation animateIn="slideInUp" delay={200}>
+    <ScrollAnimation animateIn="fadeIn" delay={400}>
       <FeaturesTabWrapper id="features">
         <p className='label-text'>Features</p>
         <div className='title'>

@@ -95,7 +95,7 @@ h2{
       white-space: nowrap;
       border:1px solid ${({theme}) => theme.colors.borderColor};
       font-size:${({theme}) => theme.fonts.headingH3};
-      font-weight:${({theme}) => theme.fontWeight.medium};
+      font-weight:${({theme}) => theme.fontWeight.regular};
       border-radius: 30px;
       box-shadow: 0px 4px 24px 0px #0000000D;
       background: ${({theme}) => theme.colors.whiteColor};

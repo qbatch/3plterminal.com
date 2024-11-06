@@ -27,7 +27,7 @@ function AccordionComponent({ items, defaultActiveKey, bodyExtra }) {
   };
   return (
     <AccordionWrapper>
-      <ScrollAnimation animateIn="slideInDown" delay={200}>
+      <ScrollAnimation animateIn="fadeIn" delay={300}>
         <Accordion activeKey={activeKey} onSelect={handleToggle}>
           {items.slice(0, visibleCount).map((item, index) => (
             <Accordion.Item eventKey={index.toString()} key={index}>

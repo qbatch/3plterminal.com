@@ -61,7 +61,7 @@ const IntegrateWithECommerce = () => {
   return (
     <Suspense fallback={<Loader />}>
     <IntegrateWithECommerceWrapper>
-      <ScrollAnimation animateIn="zoomIn" delay={200}>
+      <ScrollAnimation animateIn="fadeIn" delay={300}>
       <Container>
         <div className='header'>
           <h2>Integrate with <span><img src={HeadingIcon} loading='lazy' alt="HeadingIcon" title='HeadingIcon' />E-commerce</span> Marketplaces</h2>

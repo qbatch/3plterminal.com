@@ -109,9 +109,9 @@ button{
 }
 p{
   margin:0;
-  font-size: ${({theme}) => theme.fonts.headingH3};;
+  font-size: ${({theme}) => theme.fonts.headingH2};
   font-weight:${({theme}) => theme.fontWeight.regular};
-  color:${({theme}) => theme.colors.bodyText};
+  color:${({theme}) => theme.colors.bodyTextVariant};
   line-height: 24px;
   text-align: left;
   span{

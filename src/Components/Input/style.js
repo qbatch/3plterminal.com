@@ -6,7 +6,7 @@ const InputWrapper = styled.div`
     font-weight: ${({theme}) => theme.fontWeight.regular};
     line-height: 14px;
     text-align: left;
-    color:#535E63;
+    color:${({theme}) => theme.colors.bodyText};
 }
 input{
   border:0.5px solid ${({theme}) => theme.colors.roundStroke};
@@ -16,7 +16,7 @@ input{
   font-weight: ${({theme}) => theme.fontWeight.regular};
   line-height: 18px;
   text-align: left;
-  color:#212A2F;
+  color:${({theme}) => theme.colors.bodyTextVariant};
 }
 
 `;
