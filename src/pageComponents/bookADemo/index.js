@@ -42,7 +42,7 @@ const Demo = () => {
     if (!formValues.username) newErrors.username = 'Username is required';
     if (!formValues.email) {
       newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
+    } else if (!/\S+@\S+\.\S{2}/.test(formValues.email)) {
       newErrors.email = 'Email address is invalid';
     }
     if (!formValues.phoneNumber) newErrors.phoneNumber = 'Phone Number is required';
