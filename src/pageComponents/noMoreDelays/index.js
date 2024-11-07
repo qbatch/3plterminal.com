@@ -20,7 +20,7 @@ const NoMoreDelays = () => {
           <img className='heading' src={Heading} alt="Heading" title="Heading"/>
           <p>Ensure a smooth, profitable journey without</p>
           <p>sudden chargebacks and disruptions.</p>
-          <a href='#'><img src={Button} alt="Button" title="Button"/> </a>
+          <a href='#demo'><img src={Button} alt="Button" title="Button"/> </a>
         </div>
         </ScrollAnimation>
       </Container>
