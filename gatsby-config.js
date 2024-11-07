@@ -72,6 +72,25 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-webpack-bundle-analyzer`,
+      options: {
+        // Enable it only in production builds
+        production: true,
+
+        // Choose an analyzer mode:
+        // - 'server' (default): starts a local server to view bundle report
+        // - 'static': generates a static HTML file
+        // - 'disabled': disables the analyzer (useful for toggling)
+        analyzerMode: 'static',
+
+        // Path to save the report file (used in 'static' mode)
+        reportFilename: `./report.html`,
+
+        // Automatically open the report in your browser
+        openAnalyzer: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {

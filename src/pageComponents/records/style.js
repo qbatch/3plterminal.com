@@ -53,6 +53,26 @@ const RecordsWrapper = styled.div`
       }
     }
 }
+.heading{
+        font-family: "Caveat", cursive;
+        font-size: 90px;
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
+        margin:0;
+        ${media.sm`
+          font-size: 50px;
+        `}
+      }
+.heading-3{
+        font-size: ${({ theme }) => theme.fonts.headingH2};
+        font-weight: ${({ theme }) => theme.fontWeight.medium};
+        color: ${({ theme }) => theme.colors.primaryColor};
+        padding-top:21px;
+        margin:0;
+        ${media.sm`
+          padding-top:8px;
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        `}
+      }
 .marque-slider{
   display:none;
   ${media.md`

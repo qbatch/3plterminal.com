@@ -44,7 +44,7 @@ const Records = () => {
           ))}
         </div>
         <div className='marque-slider'>
-          <Suspense fallback={null}>
+          <Suspense fallback={<Loader />}>
             <Marquee
               speed={50}
               direction="right"
@@ -52,8 +52,8 @@ const Records = () => {
               <div className='card-wrapper'>
                 {RecordsData.map((item, index) => (
                   <div key={index} className='count-item'>
-                    <h2>{item.count}</h2>
-                    <h3>{item.text}</h3>
+                    <p className='heading'>{item.count}</p>
+                    <p className='heading-3'>{item.text}</p>
                   </div>
                 ))}
               </div>
