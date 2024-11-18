@@ -1,10 +1,10 @@
 import React from 'react'
 import { Loader } from './style'
 
-const index = () => {
+const index = ({normal, className}) => {
   return (
-    <Loader>
-      <div class="loader" />
+    <Loader normal={normal} className={className}>
+      <div className="loader" />
     </Loader>
   )
 }

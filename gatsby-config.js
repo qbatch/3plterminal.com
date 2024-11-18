@@ -87,7 +87,7 @@ module.exports = {
         reportFilename: `./report.html`,
 
         // Automatically open the report in your browser
-        openAnalyzer: true,
+        openAnalyzer: false,
       },
     },
     {

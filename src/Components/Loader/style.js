@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Loader = styled.div`
-    height: 100vh;
+    height: ${({normal}) => normal === 'lite' ? 'auto' : '100vh'};
     display: flex;
     justify-content: center;
     align-items: center;

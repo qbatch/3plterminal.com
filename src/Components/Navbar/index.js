@@ -19,7 +19,7 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <Link to='#home'><img className='logo' loading='lazy' src={'/3pl-terminal.svg'} alt="Logo" title='Logo' /></Link>
+          <Link to='#home'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link>
           <div className='navbar-links'>
             <Link to="#features">Features</Link>
             <Link to="#demo">Demo</Link>

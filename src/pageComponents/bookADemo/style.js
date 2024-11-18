@@ -2,10 +2,35 @@ import styled from "styled-components";
 import { media } from "../../theme/media-mixins";
 
 const DemoWrapper = styled.div`
+position: relative;
 margin-bottom: 99px;
 ${media.sm`
   margin-bottom: 24px;
 `}
+button.Toastify__close-button.Toastify__close-button--light{
+  margin-top:0;
+}
+input.form-control {
+    height: 41px;
+}
+label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #535E63;
+}
+.loader-wrapper {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52%;
+    background: #01204747;
+    border-radius: 24px;
+}
 .select-wrapper {
     display: flex;
     flex-direction: column;
