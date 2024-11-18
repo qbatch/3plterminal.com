@@ -29,7 +29,7 @@ const FbaPrepSoftware = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="slideInDown" delay={200}>
           <div className='buttons-group'>
-            <a href='#demo'><Button image={true}>Book Free Demo</Button></a>
+            <a rel="preload" href='#demo'><Button image={true}>Book Free Demo</Button></a>
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="slideInUp" delay={200}>

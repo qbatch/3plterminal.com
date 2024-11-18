@@ -112,7 +112,7 @@ const ExploreContent = () => {
         </div>
         <Suspense fallback={null}>  <ScrollAnimation animateIn="slideInUp" delay={200}><ResponsiveSlider data={Data} renderItem={cardRenderItem} /></ScrollAnimation></Suspense>
         <ScrollAnimation animateIn="fadeInUp" delay={200}>
-        <a href='#demo'><Button>Wanna know how a specific feature works?</Button></a>
+        <a rel="preload" href='#demo'><Button>Wanna know how a specific feature works?</Button></a>
         </ScrollAnimation>
       </ExploreContentWrapper>
     </Container>

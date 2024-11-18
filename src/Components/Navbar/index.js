@@ -20,16 +20,16 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <Link to='#home'><MainImage className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link>
+          <Link rel="preload" to='#home'><MainImage className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link>
           <div className='navbar-links'>
-            <Link to="#features">Features</Link>
-            <Link to="#demo">Demo</Link>
-            <Link to="#">Pricing</Link>
-            <Link to="#faqs">FAQ’s</Link>
+            <Link rel="preload" to="#features">Features</Link>
+            <Link rel="preload" to="#demo">Demo</Link>
+            <Link rel="preload" to="#">Pricing</Link>
+            <Link rel="preload" to="#faqs">FAQ’s</Link>
           </div>
           <div className='navbar-actions'>
-            <Link to="https://app.3plterminal.com/">Sign In</Link>
-            <Link to='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></Link>
+            <Link rel="preload" to="https://app.3plterminal.com/">Sign In</Link>
+            <Link rel="preload" to='#demo'><Button image={ChatIcon} alt="ChatIcon">Book Free Demo</Button></Link>
           </div>
             <img onClick={handleShow} className='burger-icon' src={BurgerIcon} title='BurgerIcon' alt='BurgerIcon' />
         </div>
@@ -39,14 +39,14 @@ const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body backdropClassName="3pl-drawer">
             <div className='navbar-links-mobile'>
-            <a onClick={handleClose} href="#features">Features</a>
-            <a onClick={handleClose} href="#demo">Demo</a>
-            <a onClick={handleClose} href="#">Pricing</a>
-            <a onClick={handleClose} href="#faqs">FAQ’s</a>
+            <a rel="preload" onClick={handleClose} href="#features">Features</a>
+            <a rel="preload" onClick={handleClose} href="#demo">Demo</a>
+            <a rel="preload" onClick={handleClose} href="#">Pricing</a>
+            <a rel="preload" onClick={handleClose} href="#faqs">FAQ’s</a>
             </div>
             <div className='navbar-actions-mobile'>
-              <a onClick={handleClose} href="https://app.3plterminal.com/">Sign In</a>
-              <a onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></a>
+              <a rel="preload" onClick={handleClose} href="https://app.3plterminal.com/">Sign In</a>
+              <a rel="preload" onClick={handleClose} href="#demo"><Button image={true} alt="ChatIcon">Book Free Demo</Button></a>
             </div>
           </Offcanvas.Body>
         </Offcanvas>
