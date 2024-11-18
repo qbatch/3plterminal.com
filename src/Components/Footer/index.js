@@ -51,7 +51,7 @@ const Footer = () => {
           <div className='links-wrapper'>
             <Link to="#features">Features</Link>
             <Link to="#demo">Demo</Link>
-            <Link to="#">Pricing</Link>
+            <Link to="#demo">Pricing</Link>
             <Link to="#faqs">FAQ’s</Link>
           </div>
           <div className='buttons-wrapper'>

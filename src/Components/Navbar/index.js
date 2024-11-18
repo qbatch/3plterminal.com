@@ -24,7 +24,7 @@ const Header = () => {
           <div className='navbar-links'>
             <Link rel="preload" to="#features">Features</Link>
             <Link rel="preload" to="#demo">Demo</Link>
-            <Link rel="preload" to="#">Pricing</Link>
+            <Link rel="preload" to="#demo">Pricing</Link>
             <Link rel="preload" to="#faqs">FAQ’s</Link>
           </div>
           <div className='navbar-actions'>
@@ -41,7 +41,7 @@ const Header = () => {
             <div className='navbar-links-mobile'>
             <a rel="preload" onClick={handleClose} href="#features">Features</a>
             <a rel="preload" onClick={handleClose} href="#demo">Demo</a>
-            <a rel="preload" onClick={handleClose} href="#">Pricing</a>
+            <a rel="preload" onClick={handleClose} href="#demo">Pricing</a>
             <a rel="preload" onClick={handleClose} href="#faqs">FAQ’s</a>
             </div>
             <div className='navbar-actions-mobile'>
