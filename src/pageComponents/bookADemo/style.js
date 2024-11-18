@@ -129,9 +129,12 @@ button{
     text-align: left;
     color:${({theme}) => theme.colors.primaryColor};
     position:relative;
+    img{
+      display:block;
+    }
     ${media.sm`
       font-size: ${({theme}) => theme.fonts.headingH1};
-    line-height: 48px;
+      line-height: 48px;
     
       `}
   }
