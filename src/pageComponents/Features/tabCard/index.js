@@ -1,4 +1,6 @@
 import React from 'react'
+import { MainImage } from 'gatsby-plugin-image';
+
 import { FirstTabWrapper } from './style'
 
 
@@ -10,7 +12,7 @@ const FirstTab = ({ title, data, checkboxImage, graphImage }) => {
         <div className='box-items-wrapper'>
           {data.map((item, index) => (
             <div key={index} className='bar-item'>
-              <img src={checkboxImage} loading='lazy' title='Checkbox' alt="Checkbox" />
+              <MainImage src={checkboxImage} loading='lazy' title='Checkbox' alt="Checkbox" />
               <div className='content-item'>
                 <h3>{item.heading}</h3>
                 <p>{item.text}</p>
@@ -20,7 +22,7 @@ const FirstTab = ({ title, data, checkboxImage, graphImage }) => {
         </div>
       </div>
       <div className='box'>
-        <img className='graph-image' src={graphImage} title='Graph' alt="Graph" />
+        <MainImage className='graph-image' src={graphImage} title='Graph' alt="Graph" />
       </div>
     </FirstTabWrapper>
   );

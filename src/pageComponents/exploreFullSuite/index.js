@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { MainImage } from 'gatsby-plugin-image';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll.svg';
@@ -97,8 +98,8 @@ const ExploreContent = () => {
       <ExploreContentWrapper id='explore'>
         <ScrollAnimation animateIn="bounce" delay={200}>
           <div className='header-wrapper'>
-            <img className='arrow-image' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon" />
-            <h2><img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /> Explore Full-suite of Prep, Pack,
+            <MainImage className='arrow-image' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon" />
+            <h2><MainImage src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /> Explore Full-suite of Prep, Pack,
               and Ship Features</h2>
           </div>
         </ScrollAnimation>

@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import PhoneInput from 'react-phone-input-2';
 import { isValidPhoneNumber } from 'libphonenumber-js';
+import { MainImage } from 'gatsby-plugin-image';
 
 import 'react-toastify/dist/ReactToastify.css';
 import 'react-phone-input-2/lib/style.css';
@@ -176,7 +177,7 @@ const Demo = () => {
             </Form>
           </ScrollAnimation>
           <ScrollAnimation animateIn="slideInRight" delay={200} className='demo-items' >
-            <img src={DemoImage} title="DemoImage" alt="DemoImage" />
+            <MainImage src={DemoImage} title="DemoImage" alt="DemoImage" />
           </ScrollAnimation>
           <ToastContainer position="top-right" autoClose={5000} />
         </div>

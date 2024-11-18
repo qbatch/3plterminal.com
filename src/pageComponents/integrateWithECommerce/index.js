@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import Marquee from 'react-fast-marquee';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { MainImage } from 'gatsby-plugin-image';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll.svg';
@@ -64,8 +65,8 @@ const IntegrateWithECommerce = () => {
       <ScrollAnimation animateIn="fadeIn" delay={300}>
       <Container>
         <div className='header'>
-          <h2>Integrate with <span><img src={HeadingIcon} loading='lazy' alt="HeadingIcon" title='HeadingIcon' />E-commerce</span> Marketplaces</h2>
-          <img className='roll-image' loading='lazy' src={ArrowIcon} title="ArrowIcon" alt="ArrowIcon"/>
+          <h2>Integrate with <span><MainImage src={HeadingIcon} loading='lazy' alt="HeadingIcon" title='HeadingIcon' />E-commerce</span> Marketplaces</h2>
+          <MainImage className='roll-image' loading='lazy' src={ArrowIcon} title="ArrowIcon" alt="ArrowIcon"/>
           <p>Our Prep and Pack Software makes it easy to create, add, or customize any integration suitable for your business.</p>
         </div>
         <Suspense fallback={null}>
@@ -77,7 +78,7 @@ const IntegrateWithECommerce = () => {
         >
           <div>
         {data.map((item,index) => (
-          <img className={`image-${index}`} loading='lazy' key={index} src={item.img} title={item.title} alt={item.alt} />
+          <MainImage className={`image-${index}`} loading='lazy' key={index} src={item.img} title={item.title} alt={item.alt} />
         ))}
         </div>
       </Marquee>

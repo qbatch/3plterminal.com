@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { MainImage } from 'gatsby-plugin-image';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import ArrowIcon from '../../../Static/spring-roll-left.svg';
@@ -95,8 +96,8 @@ const AccordionSection = () => {
       <Container>
       <ScrollAnimation animateIn="bounce" delay={200}>
        <div className='header'>
-          <h2>Frequently Asked Questions<img src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
-          <img className='roll-image' loading='lazy' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon"/>
+          <h2>Frequently Asked Questions<MainImage src={HeadingIcon} title='HeadingIcon' alt="HeadingIcon" /></h2>
+          <MainImage className='roll-image' loading='lazy' src={ArrowIcon} title='ArrowIcon' alt="ArrowIcon"/>
         </div>
         </ScrollAnimation>
         <Accordion items={accordionItems} bodyExtra={true} defaultActiveKey="0" />

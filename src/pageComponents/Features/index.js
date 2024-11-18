@@ -1,6 +1,7 @@
 import React, { useState, lazy, Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Form } from 'react-bootstrap'
+import { MainImage } from 'gatsby-plugin-image'
 
 import ArrowDown from '../../../Static/spring-roll-left.svg'
 import Checkbox from '../../../Static/checkbox.svg'
@@ -170,11 +171,11 @@ const FeaturesTab = () => {
         <p className='label-text'>Features</p>
         <div className='title'>
           <h2>Tired of under reported items and frustrated customers? Give them reasons why <span>you're different and trustworthy.</span></h2>
-          <img src={ArrowDown} title='banner-image' alt="arrow" />
+          <MainImage src={ArrowDown} title='banner-image' alt="arrow" />
         </div>
         <div className='tabs-wrapper'>
           <div className='select-overlay-wrapper'>
-          <img className='arrow-select' src={Arrow} alt="Arrow" title='Arrow' loading='lazy'/>
+          <MainImage className='arrow-select' src={Arrow} alt="Arrow" title='Arrow' loading='lazy'/>
 
           <Form.Select className='select-wrapper' aria-label="Default select example" value={activeTab} onChange={(e) => setActiveTab(parseInt(e.target.value))}>
             {tabsData.map(tab => (

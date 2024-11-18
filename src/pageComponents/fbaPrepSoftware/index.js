@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { MainImage } from 'gatsby-plugin-image';
 
 import MainBannerImage from '../../../Static/main-banner-image.svg'
 import DownArrow from '../../../Static/spring-roll.svg'
@@ -15,7 +16,7 @@ const FbaPrepSoftware = () => {
   return (
     <Suspense fallback={<Loader />}>
       <FbaPrepSoftwareWrapper id="home">
-        <img className='arrow-image' src={DownArrow} loading='lazy' alt='DownArrow' title='DownArrow' />
+        <MainImage className='arrow-image' src={DownArrow} loading='lazy' alt='DownArrow' title='DownArrow' />
         <ScrollAnimation animateIn="bounce">
           <h1>FBA Prep and Pack Software</h1>
         </ScrollAnimation>
@@ -32,7 +33,7 @@ const FbaPrepSoftware = () => {
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="slideInUp" delay={200}>
-          <img
+          <MainImage
             className="banner-image"
             src={MainBannerImage}
             alt="banner-image"

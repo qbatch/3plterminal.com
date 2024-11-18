@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { MainImage } from 'gatsby-plugin-image';
 
 import HeadingIcon from '../../../Static/heading-top-icon.svg';
 import Factor from '../../../Static/Factors.svg';
@@ -70,8 +71,8 @@ const TurnChallenges = () => {
     <TurnChallengesWrapper>
       <Container>
       <ScrollAnimation className='heading-wrapper' animateIn="bounce" delay={200}>
-      <img className='arrow-image' src={ArrowDown} title='ArrowIcon' alt="ArrowIcon" />
-      <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<img src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2></ScrollAnimation>
+      <MainImage className='arrow-image' src={ArrowDown} title='ArrowIcon' alt="ArrowIcon" />
+      <h2>Turn challenges into wins with our prep and pack software powering your 3PL centers — <span>building a thriving business.<MainImage src={HeadingIcon} alt="HeadingIcon" title='HeadingIcon' /></span></h2></ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn" delay={200}> <div className='items-wrapper'>
         {data.map((item, index) => renderItem(item, index))}
         </div></ScrollAnimation>

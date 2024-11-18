@@ -5,6 +5,7 @@ import Logo from '../../../Static/3pl-terminal.svg'
 import ChatIcon from '../../../Static/chat-network.svg'
 import BurgerIcon from '../../../Static/burger-icon.svg'
 import { NavbarStyleWrapper } from './style';
+import { MainImage } from 'gatsby-plugin-image';
 
 const Container = lazy(() => import('../Container'));
 const Button  = lazy(() => import( '../Button'));
@@ -19,7 +20,7 @@ const Header = () => {
     <NavbarStyleWrapper>
       <Container>
         <div className='navbar'>
-          <Link to='#home'><img className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link>
+          <Link to='#home'><MainImage className='logo' loading='lazy' src={Logo} alt="Logo" title='Logo' /></Link>
           <div className='navbar-links'>
             <Link to="#features">Features</Link>
             <Link to="#demo">Demo</Link>
